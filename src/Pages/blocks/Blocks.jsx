@@ -24,8 +24,8 @@ const Blocks = () => {
             key={e.id}
             className={`${
               index % 2 === 0
-                ? "w-full border md:border-t-0 md:border-l-0 md:border-r-2 pt-10 md:border-b-3 md:border-gray-300"
-                : "w-full border md:border-t-0 md:border-r-0 md:border-b-3 pt-10 md:border-gray-300"
+                ? "w-full border md:border-t-0 md:border-l-0 md:border-r-2 pt-5 md:border-b-3 md:border-gray-300"
+                : "w-full border md:border-t-0 md:border-r-0 md:border-b-3 pt-5 md:border-gray-300"
             }
                 ${
                   index === CostumData.length - 1 ||

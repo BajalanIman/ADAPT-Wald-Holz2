@@ -10,7 +10,7 @@ const NavigationDrawers = () => {
     setSideBarSize(!sideBarSize);
   };
   return (
-    <div className=" relative flex justify-start items-start h-screen">
+    <div className=" relative flex justify-start items-start h-screen ">
       <Button
         onClick={showSidebarHandler}
         sx={{
@@ -22,7 +22,7 @@ const NavigationDrawers = () => {
             backgroundColor: "white",
           },
           top: 10,
-          left: sideBarSize ? "410px" : "15px",
+          left: sideBarSize ? "41vh" : "1.5vh",
         }}
       >
         <DensityMediumIcon fontSize="large" />
@@ -30,7 +30,7 @@ const NavigationDrawers = () => {
       {sideBarSize && (
         <Box
           sx={{
-            width: 400,
+            width: "40vh",
             marginTop: 1,
             marginLeft: 1,
             height: "full",
@@ -42,7 +42,7 @@ const NavigationDrawers = () => {
         >
           <Box
             sx={{
-              borderBottom: "2px dashed #4169E1",
+              borderBottom: "2px dashed gray",
               width: 230,
               paddingBottom: 1,
             }}
@@ -60,36 +60,38 @@ const NavigationDrawers = () => {
               ADAPT-Wald-Holz
             </Typography>
           </Box>
-          <Link to="pagetwo">
-            <Typography
-              variant="h6"
-              sx={{
-                marginY: 5,
-                cursor: "pointer",
-                fontFamily: "Merriweather",
-                fontWeight: 700,
-                lineHeight: 2.1,
-                "&:hover": { color: "#4169E1" },
-              }}
-            >
-              N2: Adaptives Waldressourcen-Management für eine zukunftsfähige
-              Holzwirtschaft in der Region Brandenburg-Berlin
-            </Typography>
-          </Link>
+          <Box sx={{ marginY: 3 }}>
+            <Link to="pagetwo">
+              <Typography
+                variant="p"
+                sx={{
+                  cursor: "pointer",
+                  fontFamily: "Merriweather",
+                  fontSize: "calc(0.8vw)",
+                  fontWeight: "bold",
+                  lineHeight: 2,
+                  "&:hover": { color: "#4169E1" },
+                }}
+              >
+                N2: Adaptives Waldressourcen-Management für eine zukunftsfähige
+                Holzwirtschaft in der Region Brandenburg-Berlin
+              </Typography>
+            </Link>
+          </Box>
           <Divider sx={{ marginRight: "40px" }}></Divider>
           <Box
             sx={{
-              marginTop: 6,
+              marginY: 3,
               width: "230px",
             }}
           >
             <Link to="pagetwo">
               <Typography
-                variant="h6"
+                variant="p"
                 sx={{
                   fontWeight: "bold",
+                  fontSize: "calc(0.8vw)",
                   fontFamily: "Merriweather",
-                  fontWeight: 900,
                   "&:hover": { color: "#4169E1" },
                 }}
               >
@@ -101,16 +103,18 @@ const NavigationDrawers = () => {
                 display: "flex",
                 flexDirection: "column",
                 pl: 3,
-                py: 2,
-                gap: 3,
+                pt: 2,
+                // py: 2,
+                gap: 2,
               }}
             >
               <Link to="pagefive">
                 <Typography
-                  variant="h6"
+                  variant="p"
                   sx={{
                     fontFamily: "Merriweather",
                     fontWeight: "bold",
+                    fontSize: "calc(0.7vw)",
                     "&:hover": {
                       color: "#4169E1",
                     },
@@ -121,9 +125,10 @@ const NavigationDrawers = () => {
               </Link>
               <Link to="pagesix">
                 <Typography
-                  variant="h6"
+                  variant="p"
                   sx={{
                     fontFamily: "Merriweather",
+                    fontSize: "calc(0.7vw)",
                     fontWeight: "bold",
                     "&:hover": { color: "#4169E1" },
                   }}
@@ -133,9 +138,10 @@ const NavigationDrawers = () => {
               </Link>
               <Link to="pageseven">
                 <Typography
-                  variant="h6"
+                  variant="p"
                   sx={{
                     fontFamily: "Merriweather",
+                    fontSize: "calc(0.7vw)",
                     fontWeight: "bold",
                     "&:hover": { color: "#4169E1" },
                   }}
@@ -145,90 +151,88 @@ const NavigationDrawers = () => {
               </Link>
             </Box>
           </Box>
-          <Box sx={{ marginTop: 5 }}>
-            <Box
+
+          <Box
+            sx={{
+              borderTop: "2px solid #C0C0C0",
+              marginRight: 6,
+              paddingY: 2,
+              // paddingX: 2,
+            }}
+          >
+            <Typography
+              variant="p"
               sx={{
-                borderTop: "2px solid #C0C0C0",
-                marginRight: 6,
-                paddingTop: 4,
-                paddingBottom: 2,
+                fontFamily: "Merriweather",
+                fontSize: "calc(0.8vw)",
+                fontWeight: "bold",
               }}
             >
+              N4: InnoForum Wald und Holz
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              borderTop: "2px solid #C0C0C0",
+              paddingY: 2,
+              marginRight: 6,
+            }}
+          >
+            <Link to="pageeight">
               <Typography
-                variant="h6"
+                variant="p"
                 sx={{
                   fontFamily: "Merriweather",
+                  fontSize: "calc(0.8vw)",
                   fontWeight: "bold",
+                  "&:hover": { color: "#4169E1" },
                 }}
               >
-                N4: InnoForum Wald und Holz
+                N5: Projektkonsortium
               </Typography>
-            </Box>
-            <Box
-              sx={{
-                borderTop: "2px solid #C0C0C0",
-                paddingTop: 4,
-                paddingBottom: 2,
-                marginRight: 6,
-              }}
-            >
-              <Link to="pageeight">
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: "Merriweather",
-                    fontWeight: "bold",
-                    "&:hover": { color: "#4169E1" },
-                  }}
-                >
-                  N5: Projektkonsortium
-                </Typography>
-              </Link>
-            </Box>
-            <Box
-              sx={{
-                my: 2,
-                borderTop: "2px solid #C0C0C0",
-                marginRight: 6,
-                paddingTop: 4,
-                paddingBottom: 2,
-              }}
-            >
-              <Link to="pagefour">
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: "Merriweather",
-                    fontWeight: "bold",
-                    "&:hover": { color: "#4169E1" },
-                  }}
-                >
-                  N6: REGULUS
-                </Typography>
-              </Link>
-            </Box>
-            <Box
-              sx={{
-                my: 2,
-                borderTop: "2px solid #C0C0C0",
-                marginRight: 6,
-                paddingTop: 4,
-                paddingBottom: 2,
-              }}
-            >
-              <Link to="imprint">
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontFamily: "Merriweather",
-                    fontWeight: "bold",
-                    "&:hover": { color: "#4169E1" },
-                  }}
-                >
-                  Impressum
-                </Typography>
-              </Link>
-            </Box>
+            </Link>
+          </Box>
+          <Box
+            sx={{
+              borderTop: "2px solid #C0C0C0",
+              marginRight: 6,
+              paddingY: 2,
+            }}
+          >
+            <Link to="pagefour">
+              <Typography
+                variant="p"
+                sx={{
+                  fontFamily: "Merriweather",
+                  fontSize: "calc(0.8vw)",
+                  fontWeight: "bold",
+                  "&:hover": { color: "#4169E1" },
+                }}
+              >
+                N6: REGULUS
+              </Typography>
+            </Link>
+          </Box>
+          <Box
+            sx={{
+              borderTop: "2px solid #C0C0C0",
+              marginRight: 6,
+              paddingY: 2,
+            }}
+          >
+            <Link to="imprint">
+              <Typography
+                variant="p"
+                sx={{
+                  fontFamily: "Merriweather",
+                  fontSize: "calc(0.8vw)",
+                  fontWeight: "bold",
+                  "&:hover": { color: "#4169E1" },
+                }}
+              >
+                Impressum
+              </Typography>
+            </Link>
           </Box>
         </Box>
       )}

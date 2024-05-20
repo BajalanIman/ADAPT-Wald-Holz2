@@ -14,7 +14,7 @@ const PageFour = () => {
     <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
       <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
-          <img src={adapt} alt="adapt" className="w-80" />
+          <img src={adapt} alt="adapt" className="w-60" />
         </Link>
       </Box>
       <Typography
@@ -30,10 +30,15 @@ const PageFour = () => {
         Page4-title: REGULUS
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center", mb: 8 }}>
-        <img
+        <Box
+          component="img"
           src={image4}
-          alt="example1"
-          style={{ maxWidth: "100%", height: "auto", borderRadius: "5px" }}
+          alt="image4"
+          sx={{
+            maxHeight: { xs: "50vh", md: "50vh", lg: "60vh" },
+            width: "100%",
+            objectFit: "contain",
+          }}
         />
       </Box>
       <Box sx={{ my: 4 }}>

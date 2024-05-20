@@ -10,7 +10,7 @@ const PageSeven = () => {
   return (
     <Box className="w-full ml-24 pr-24 mb-8">
       <Link to="/">
-        <img src={adapt} alt="adapt" className="w-80" />
+        <img src={adapt} alt="adapt" className="w-60" />
       </Link>
       <Typography
         variant="h2"
@@ -27,10 +27,15 @@ const PageSeven = () => {
       </Typography>
 
       <Box sx={{ display: "flex", justifyContent: "center", marginY: 8 }}>
-        <img
+        <Box
+          component="img"
           src={image7}
           alt="image7"
-          className="max-h-[700px] sm:full md:w-4/5 rounded-md"
+          sx={{
+            maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
+            width: "100%",
+            objectFit: "contain",
+          }}
         />
       </Box>
       <Box

@@ -11,7 +11,7 @@ const PageSix = () => {
     <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
       <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
-          <img src={adapt} alt="adapt" className="w-80" />
+          <img src={adapt} alt="adapt" className="w-60" />
         </Link>
       </Box>
       <Typography
@@ -28,7 +28,16 @@ const PageSix = () => {
         Holzbereitstellungskette
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-        <img src={image6} alt="image6" className="h-[600px] rounded-md" />
+        <Box
+          component="img"
+          src={image6}
+          alt="image6"
+          sx={{
+            maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
+            width: "100%",
+            objectFit: "contain",
+          }}
+        />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
         <Typography variant="h6" sx={{ textAlign: "justify", mb: 2 }}>

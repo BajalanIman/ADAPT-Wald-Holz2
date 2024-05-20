@@ -1,4 +1,4 @@
-import { Button, CardMedia, Typography } from "@mui/material";
+import { Box, Button, CardMedia, Typography } from "@mui/material";
 import React from "react";
 import example1 from "./../../assets/example1.jpg";
 import { Link, useNavigate } from "react-router-dom";
@@ -18,44 +18,48 @@ const BlockTwo = ({ data, index }) => {
     <div
       className={`${
         index % 2 === 0
-          ? "h-[1000px] px-6 md:pr-12 flex flex-col gap-10"
-          : "h-[1000px] px-6 md:pl-12 flex flex-col gap-10"
+          ? "h-[750px] px-3 md:pr-6 flex flex-col gap-10"
+          : "h-[750px] px-3 md:pl-6 flex flex-col gap-10"
       }`}
     >
-      <Button onClick={panoClickHandler}>
-        <CardMedia
-          sx={{
-            borderRadius: 4,
-            height: 450,
-            display: "inline-grid",
-            overflow: "hidden",
-            "&:hover": {
-              transform: "scale(1.02)",
-              transformOrigin: "40% 20%",
-            },
-          }}
-          component="img"
-          image={data.image}
-          title="text"
-          alt="text"
-        />
-      </Button>
-      <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-        {data.title}
-      </Typography>
-      <Typography
-        variant="p"
+      <Box sx={{ height: "45%", width: "100%" }}>
+        <Button onClick={panoClickHandler}>
+          <CardMedia
+            sx={{
+              borderRadius: 4,
+              height: "40vh",
+              width: "80vh",
+              display: "inline-grid",
+              overflow: "hidden",
+              "&:hover": {
+                transform: "scale(1.02)",
+                transformOrigin: "40% 20%",
+              },
+            }}
+            component="img"
+            image={data.image}
+            title="text"
+            alt="text"
+          />
+        </Button>
+      </Box>
+      <Box
         sx={{
-          fontSize: 17,
+          height: "40%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          gap: 4,
         }}
       >
-        {data.text}
-      </Typography>
-      {data.textTwo && (
+        <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+          {data.title}
+        </Typography>
+        <Typography variant="p">{data.text}</Typography>
+        {/* {data.textTwo && (
         <Typography
           variant="p"
           sx={{
-            fontSize: 17,
             maxWidth: "100ch",
             overflow: "hidden",
             textOverflow: "ellipsis",
@@ -64,9 +68,9 @@ const BlockTwo = ({ data, index }) => {
         >
           {data.textTwo}
         </Typography>
-      )}
-
-      <div>
+      )} */}
+      </Box>
+      <Box sx={{ height: "15%" }}>
         <Link to={data.navigate}>
           <Button
             sx={{
@@ -74,7 +78,7 @@ const BlockTwo = ({ data, index }) => {
               paddingX: 5,
               paddingY: 1,
               fontWeight: "bold",
-              fontSize: 16,
+              fontSize: 15,
               fontFamily: "sans",
               color: "green",
               "&:hover": {
@@ -86,7 +90,7 @@ const BlockTwo = ({ data, index }) => {
             {data.btn}
           </Button>
         </Link>
-      </div>
+      </Box>
     </div>
   );
 };

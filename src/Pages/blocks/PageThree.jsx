@@ -10,7 +10,7 @@ const PageThree = () => {
   return (
     <div className=" w-full ml-24 pr-24 mb-8">
       <Link to="/">
-        <img src={adapt} alt="adapt" className="w-80" />
+        <img src={adapt} alt="adapt" className="w-60" />
       </Link>
       <Box>
         <Typography
@@ -32,7 +32,16 @@ const PageThree = () => {
             borderRadius: 5,
           }}
         >
-          <img src={image3} alt="image3" className="max-h-[700px] rounded-md" />
+          <Box
+            component="img"
+            src={image3}
+            alt="example1"
+            sx={{
+              maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
+              width: "100%",
+              objectFit: "contain",
+            }}
+          />
         </Box>
       </Box>
       <Box

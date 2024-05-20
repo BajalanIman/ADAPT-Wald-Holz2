@@ -12,7 +12,7 @@ const PageTwo = () => {
     <Box sx={{ width: "100%", px: { xs: 2, md: 6, lg: 12 }, mb: 8 }}>
       <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
-          <img src={adapt} alt="adapt" className="w-80" />
+          <img src={adapt} alt="adapt" className="w-60" />
         </Link>
       </Box>
       <Box>
@@ -34,7 +34,7 @@ const PageTwo = () => {
             src={image2}
             alt="example1"
             sx={{
-              maxHeight: { xs: "300px", md: "500px", lg: "700px" },
+              maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
               width: "100%",
               objectFit: "contain",
             }}

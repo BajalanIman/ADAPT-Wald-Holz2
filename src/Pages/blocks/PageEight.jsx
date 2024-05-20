@@ -10,7 +10,7 @@ const PageEight = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <Link to="/">
-        <img src={adapt} alt="adapt" className="w-80" />{" "}
+        <img src={adapt} alt="adapt" className="w-60" />
       </Link>
       <Box>
         <Typography
@@ -26,10 +26,15 @@ const PageEight = () => {
         </Typography>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center", marginY: 8 }}>
-        <img
+        <Box
+          component="img"
           src={image8}
-          alt="example1"
-          className="lg:w-[1500px] lg:h-[700px] md:max-w-screen-lg h-auto rounded-md"
+          alt="image8"
+          sx={{
+            maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
+            width: "100%",
+            objectFit: "contain",
+          }}
         />
       </Box>
       <Box

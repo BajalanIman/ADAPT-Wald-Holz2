@@ -11,7 +11,7 @@ const PageFive = () => {
     <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
       <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
-          <img src={adapt} alt="adapt" className="w-80" />
+          <img src={adapt} alt="adapt" className="w-60" />
         </Link>
       </Box>
       <Typography
@@ -49,7 +49,16 @@ const PageFive = () => {
           Waldökosystemleistungen in der Region Brandenburg-Berlin analysiert.
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-          <img src={image5} alt="image5" className="max-h-[700px] rounded-md" />
+          <Box
+            component="img"
+            src={image5}
+            alt="image5"
+            sx={{
+              maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
+              width: "100%",
+              objectFit: "contain",
+            }}
+          />
         </Box>
         <Typography variant="h6" sx={{ textAlign: "justify", mb: 2 }}>
           Page5-P3: Die auf der Kernfläche des Waldreallabors implementierten

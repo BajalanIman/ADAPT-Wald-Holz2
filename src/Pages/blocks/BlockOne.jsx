@@ -13,7 +13,7 @@ const BlockOne = () => {
       <div className="relative mt-12 ml-9 md:ml-0 border-2 border-white w-[680px] md:w-full">
         <CardMedia
           sx={{
-            height: { xs: "300px", md: "500px" },
+            height: { xs: "300px", md: "350px" },
             width: { xs: "95%", md: "100%" },
             borderRadius: 4,
           }}
@@ -30,7 +30,7 @@ const BlockOne = () => {
               fontFamily: "Alfa Slab One",
               color: "black",
               opacity: "85%",
-              fontSize: { xs: 30, md: 40, lg: 84 },
+              fontSize: { xs: 20, md: 25, lg: 45 },
               WebkitTextStrokeWidth: "1px", // Adjust stroke width
               WebkitTextStrokeColor: "white", // Adjust stroke color
             }}
