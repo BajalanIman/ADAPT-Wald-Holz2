@@ -1,9 +1,10 @@
 import { Box, Button, Divider, Typography } from "@mui/material";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavigationDrawers = () => {
-  const [sideBarSize, setSideBarSize] = useState(false);
+  const [sideBarSize, setSideBarSize] = useState(true);
 
   const showSidebarHandler = () => {
     setSideBarSize(!sideBarSize);
@@ -17,7 +18,7 @@ const NavigationDrawers = () => {
           display: "flex",
           color: "green",
           "&:hover": {
-            color: "blue",
+            color: "#4169E1",
             backgroundColor: "white",
           },
           top: 10,
@@ -48,103 +49,186 @@ const NavigationDrawers = () => {
           >
             <Typography
               variant="h5"
-              sx={{ fontWeight: "bold", paddingBottom: "10px" }}
+              sx={{
+                fontWeight: "bold",
+                paddingBottom: "10px",
+                fontFamily: "Lilita One",
+                fontWeight: 400,
+                fontStyle: "normal",
+              }}
             >
               ADAPT-Wald-Holz
             </Typography>
           </Box>
-          <Typography
-            variant="h6"
-            sx={{ marginY: "40px", "&:hover": { color: "blue" } }}
-          >
-            Klimaangepasste Impulse für das Ökosystem Wald
-          </Typography>
+          <Link to="pagetwo">
+            <Typography
+              variant="h6"
+              sx={{
+                marginY: 5,
+                cursor: "pointer",
+                fontFamily: "Merriweather",
+                fontWeight: 700,
+                lineHeight: 2.1,
+                "&:hover": { color: "#4169E1" },
+              }}
+            >
+              N2: Adaptives Waldressourcen-Management für eine zukunftsfähige
+              Holzwirtschaft in der Region Brandenburg-Berlin
+            </Typography>
+          </Link>
           <Divider sx={{ marginRight: "40px" }}></Divider>
           <Box
             sx={{
               marginTop: 6,
-              borderBottom: "2px dashed #4169E1",
-              width: "200px",
-              paddingBottom: 1,
+              width: "230px",
             }}
           >
-            <Typography
-              variant="h5"
+            <Link to="pagetwo">
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: "bold",
+                  fontFamily: "Merriweather",
+                  fontWeight: 900,
+                  "&:hover": { color: "#4169E1" },
+                }}
+              >
+                N3: Die Module
+              </Typography>
+            </Link>
+            <Box
               sx={{
-                fontWeight: "bold",
+                display: "flex",
+                flexDirection: "column",
+                pl: 3,
+                py: 2,
+                gap: 3,
               }}
             >
-              Die Teilprojekte
-            </Typography>
+              <Link to="pagefive">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": {
+                      color: "#4169E1",
+                    },
+                  }}
+                >
+                  Waldmanagement
+                </Typography>
+              </Link>
+              <Link to="pagesix">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": { color: "#4169E1" },
+                  }}
+                >
+                  Holzbereitstellung
+                </Typography>
+              </Link>
+              <Link to="pageseven">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": { color: "#4169E1" },
+                  }}
+                >
+                  Holzverwendung
+                </Typography>
+              </Link>
+            </Box>
           </Box>
-          <Box sx={{ marginTop: 5, paddingLeft: 4 }}>
+          <Box sx={{ marginTop: 5 }}>
             <Box
               sx={{
                 borderTop: "2px solid #C0C0C0",
                 marginRight: 6,
-                paddingY: 1,
+                paddingTop: 4,
+                paddingBottom: 2,
               }}
             >
-              <Typography>1</Typography>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontFamily: "Merriweather",
+                  fontWeight: "bold",
+                }}
+              >
+                N4: InnoForum Wald und Holz
+              </Typography>
             </Box>
             <Box
               sx={{
                 borderTop: "2px solid #C0C0C0",
+                paddingTop: 4,
+                paddingBottom: 2,
                 marginRight: 6,
-                paddingY: 1,
               }}
             >
-              <Typography>2</Typography>
+              <Link to="pageeight">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": { color: "#4169E1" },
+                  }}
+                >
+                  N5: Projektkonsortium
+                </Typography>
+              </Link>
             </Box>
             <Box
               sx={{
+                my: 2,
                 borderTop: "2px solid #C0C0C0",
                 marginRight: 6,
-                paddingY: 1,
+                paddingTop: 4,
+                paddingBottom: 2,
               }}
             >
-              <Typography>3</Typography>
+              <Link to="pagefour">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": { color: "#4169E1" },
+                  }}
+                >
+                  N6: REGULUS
+                </Typography>
+              </Link>
             </Box>
             <Box
               sx={{
+                my: 2,
                 borderTop: "2px solid #C0C0C0",
                 marginRight: 6,
-                paddingY: 1,
+                paddingTop: 4,
+                paddingBottom: 2,
               }}
             >
-              <Typography>4</Typography>
+              <Link to="imprint">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontFamily: "Merriweather",
+                    fontWeight: "bold",
+                    "&:hover": { color: "#4169E1" },
+                  }}
+                >
+                  Impressum
+                </Typography>
+              </Link>
             </Box>
-            <Box
-              sx={{
-                borderTop: "2px solid #C0C0C0",
-                marginRight: 6,
-                paddingY: 1,
-              }}
-            >
-              <Typography>5</Typography>
-            </Box>
-            <Box
-              sx={{
-                borderTop: "2px solid #C0C0C0",
-                marginRight: 6,
-                paddingY: 1,
-              }}
-            >
-              <Typography>6</Typography>
-            </Box>
-            <Button
-              sx={{
-                border: "3px solid green",
-                paddingX: 5,
-                paddingY: 1,
-                fontWeight: "bold",
-                fontSize: 16,
-                fontFamily: "sans",
-                marginTop: 6,
-              }}
-            >
-              ALLE
-            </Button>
           </Box>
         </Box>
       )}

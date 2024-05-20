@@ -7,7 +7,7 @@ const BlockTwo = ({ data, index }) => {
   const navigate = useNavigate();
 
   const panoClickHandler = () => {
-    navigate("/example", {
+    navigate(data.navigate, {
       state: {
         title: data.title,
       },
@@ -18,14 +18,15 @@ const BlockTwo = ({ data, index }) => {
     <div
       className={`${
         index % 2 === 0
-          ? "h-[1000px] pr-12 flex flex-col gap-10"
-          : "h-[1000px] pl-12 flex flex-col gap-10"
+          ? "h-[1000px] px-6 md:pr-12 flex flex-col gap-10"
+          : "h-[1000px] px-6 md:pl-12 flex flex-col gap-10"
       }`}
     >
       <Button onClick={panoClickHandler}>
         <CardMedia
           sx={{
             borderRadius: 4,
+            height: 450,
             display: "inline-grid",
             overflow: "hidden",
             "&:hover": {
@@ -34,7 +35,7 @@ const BlockTwo = ({ data, index }) => {
             },
           }}
           component="img"
-          image={example1}
+          image={data.image}
           title="text"
           alt="text"
         />
@@ -66,7 +67,7 @@ const BlockTwo = ({ data, index }) => {
       )}
 
       <div>
-        <Link to="/example">
+        <Link to={data.navigate}>
           <Button
             sx={{
               border: "3px solid green",

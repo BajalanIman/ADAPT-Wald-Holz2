@@ -7,13 +7,16 @@ import Footer from "./Footer";
 
 const Blocks = () => {
   return (
-    <div className=" w-full ml-24 pr-24 mb-8">
+    <div className=" w-full lg:ml-24 lg:pr-24 mb-8">
       <BlockOne />
       <Box
         sx={{
           display: { xs: "flex", md: "grid" },
+          justifyItems: "center",
+          alignContent: "center",
+          flexDirection: "column",
           gridTemplateColumns: "repeat(auto-fit, minmax(50%, 1fr))",
-          width: "100%",
+          width: { xs: "170%", md: "100%" },
         }}
       >
         {CostumData.map((e, index) => (
@@ -21,8 +24,8 @@ const Blocks = () => {
             key={e.id}
             className={`${
               index % 2 === 0
-                ? "w-full border border-t-0 border-l-0 border-r-2 pt-10 border-b-3 border-gray-300"
-                : "w-full border border-t-0 border-r-0 border-b-3 pt-10 border-gray-300"
+                ? "w-full border md:border-t-0 md:border-l-0 md:border-r-2 pt-10 md:border-b-3 md:border-gray-300"
+                : "w-full border md:border-t-0 md:border-r-0 md:border-b-3 pt-10 md:border-gray-300"
             }
                 ${
                   index === CostumData.length - 1 ||
