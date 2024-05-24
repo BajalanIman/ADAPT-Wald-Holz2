@@ -5,13 +5,15 @@ import { Box, Typography } from "@mui/material";
 import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import image3 from "./../../assets/page3.jpg";
 import Footer from "./Footer";
+import TopLogo from "./TopLogo";
 
 const PageThree = () => {
   return (
     <div className=" w-full ml-24 pr-24 mb-8">
-      <Link to="/">
+      <TopLogo />
+      {/* <Link to="/">
         <img src={adapt} alt="adapt" className="w-60" />
-      </Link>
+      </Link> */}
       <Box>
         <Typography
           variant="h2"
@@ -47,14 +49,14 @@ const PageThree = () => {
       <Box
         sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 6 }}
       >
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page3-P1: Das regionale Forschungscluster Wald-Holz am Standort
           Eberswalde liefert durch seine Vernetzung mit Schlüsselakteuren der
           brandenburgischen Wald- und Holzwirtschaft die Basis für erfolgreichen
           Wissenstransfer und damit für eine Transformation der Wald- und
           Holzwirtschaft.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page3-P2: Mit dem Aufbau eines Innovationsforums (InnoForum Wald und
           Holz), in dem forst- und holzwirtschaftliche mit nicht-forstlichen
           Akteuren zusammenarbeiten, wird eine transfer-freundliche Umgebung

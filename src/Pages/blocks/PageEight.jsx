@@ -5,13 +5,15 @@ import Footer from "./Footer";
 
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
+import TopLogo from "./TopLogo";
 
 const PageEight = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
-      <Link to="/">
+      <TopLogo />
+      {/* <Link to="/">
         <img src={adapt} alt="adapt" className="w-60" />
-      </Link>
+      </Link> */}
       <Box>
         <Typography
           variant="h2"

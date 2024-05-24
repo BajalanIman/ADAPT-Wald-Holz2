@@ -3,19 +3,19 @@ import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import imgBl1 from "./../../assets/IMG_1593.jpg";
 import { CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import TopLogo from "./TopLogo";
 
 const BlockOne = () => {
   return (
     <div className="md:my-12">
-      <Link to="/">
-        <img src={adapt} alt="adapt" className="w-64 ml-9 md:ml-0 md:w-76" />
-      </Link>
+      {/* <TopLogo /> */}
       <div className="relative mt-12 ml-9 md:ml-0 border-2 border-white w-[680px] md:w-full">
         <CardMedia
           sx={{
             height: { xs: "300px", md: "350px" },
-            width: { xs: "95%", md: "100%" },
-            borderRadius: 4,
+            width: "full",
+            paddingX: 3,
+            borderRadius: 0,
           }}
           component="img"
           image={imgBl1}

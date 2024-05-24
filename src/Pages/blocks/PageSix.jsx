@@ -5,15 +5,17 @@ import Footer from "./Footer";
 
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
+import TopLogo from "./TopLogo";
 
 const PageSix = () => {
   return (
     <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
-      <Box sx={{ textAlign: "center", mt: 4 }}>
+      <TopLogo />
+      {/* <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
           <img src={adapt} alt="adapt" className="w-60" />
         </Link>
-      </Box>
+      </Box> */}
       <Typography
         variant="h2"
         sx={{
@@ -40,7 +42,7 @@ const PageSix = () => {
         />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
-        <Typography variant="h6" sx={{ textAlign: "justify", mb: 2 }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
           Page6-P1: Kernstück der Bemühungen zur Optimierung der
           Rohstoffversorgung und des zugehörigen Datenaustauschs sowie zur
           Erhöhung von Transparenz und Vertrauen zwischen der Wald- und der
@@ -67,7 +69,7 @@ const PageSix = () => {
           </Link>
           ).
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify", mb: 2 }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
           Page6-P2: Es werden relevante Elemente der Holzbereitstellungskette
           detailliert untersucht und optimiert. So sollen die
           Einsatzmöglichkeiten von teilmechanisierten Holzernteverfahren unter

@@ -5,13 +5,15 @@ import { Box, Typography } from "@mui/material";
 import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import image7 from "./../../assets/page7.jpg";
 import Footer from "./Footer";
+import TopLogo from "./TopLogo";
 
 const PageSeven = () => {
   return (
     <Box className="w-full ml-24 pr-24 mb-8">
-      <Link to="/">
+      <TopLogo />
+      {/* <Link to="/">
         <img src={adapt} alt="adapt" className="w-60" />
-      </Link>
+      </Link> */}
       <Typography
         variant="h2"
         sx={{
@@ -25,7 +27,6 @@ const PageSeven = () => {
         Konzepte zukünftiger Holzverwendung im Hinblick auf eine regionale
         Ressourcen-Bereitstellung
       </Typography>
-
       <Box sx={{ display: "flex", justifyContent: "center", marginY: 8 }}>
         <Box
           component="img"
@@ -41,13 +42,13 @@ const PageSeven = () => {
       <Box
         sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 4 }}
       >
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page7-P1: Mit dem Anspruch der langjährigen C-Bindung und einer
           Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen
           Produkten, insbesondere im Holzbau angestrebt und die Wiederverwendung
           und -verwertung nach der Lebensdauer mitgedacht.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page7-P2: Wesentliche Einflussfaktoren auf physikalische Eigenschaften
           sind die Holzart sowie Standort- und Klimafaktoren während des
           Baumwachstums. An Bäumen des Waldreallabors sollen insbesondere
@@ -67,7 +68,7 @@ const PageSeven = () => {
           </Link>
           ).
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page7-P3: Basierend auf der Materialanalyse des ganzen Baumes werden
           neben den hochwertigen Segmenten für den Holzbau auch innovative
           Produkte aus Restholz und Rinde entwickelt: im Rahmen von
@@ -76,7 +77,7 @@ const PageSeven = () => {
           Baumes untersucht und ggf. mit materialwissenschaftlichen Methoden
           ergänzt.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page7-P4: Basierend auf der Materialanalyse des ganzen Baumes werden
           neben den hochwertigen Segmenten für den Holzbau auch innovative
           Produkte aus Restholz und Rinde entwickelt: im Rahmen von
@@ -85,7 +86,7 @@ const PageSeven = () => {
           Baumes untersucht und ggf. mit materialwissenschaftlichen Methoden
           ergänzt.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page7-P5: Um zu einer effizienteren Nutzung des Rohstoffes Kiefer zu
           gelangen, ist es notwendig, dass die Kiefer in ihren
           Festigkeitseigenschaften, die von den Wuchsmerkmalen abhängen,

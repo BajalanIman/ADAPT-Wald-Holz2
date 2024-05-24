@@ -6,15 +6,17 @@ import Footer from "./Footer";
 
 import { Link } from "react-router-dom";
 import { Box, Typography, colors } from "@mui/material";
+import TopLogo from "./TopLogo";
 
 const PageTwo = () => {
   return (
     <Box sx={{ width: "100%", px: { xs: 2, md: 6, lg: 12 }, mb: 8 }}>
-      <Box sx={{ textAlign: "center", mt: 4 }}>
+      <TopLogo />
+      {/* <Box sx={{ textAlign: "center", mt: 4 }}>
         <Link to="/">
           <img src={adapt} alt="adapt" className="w-60" />
         </Link>
-      </Box>
+      </Box> */}
       <Box>
         <Typography
           variant="h2"
@@ -44,7 +46,7 @@ const PageTwo = () => {
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
         <Typography
           variant="h6"
-          sx={{ display: "inline", textAlign: "justify" }}
+          sx={{ display: "inline", textAlign: { md: "justify" } }}
         >
           Page2-P1: Das innovative, regionale Forschungscluster Klima-Wald-Holz
           entsteht am Waldcampus Eberswalde. Alle Verbundpartner bringen ihre

@@ -3,8 +3,38 @@ import React from "react";
 import example1 from "./../../assets/example1.jpg";
 import { Link, useNavigate } from "react-router-dom";
 
+//
+import { useState, useEffect, useRef } from "react";
+
 const BlockTwo = ({ data, index }) => {
   const navigate = useNavigate();
+
+  const isEven = index % 2 === 0;
+
+  const boxRef = useRef(null);
+  const [boxWidth, setBoxWidth] = useState(0);
+
+  useEffect(() => {
+    const resizeObserver = new ResizeObserver((entries) => {
+      if (entries[0]) {
+        setBoxWidth(entries[0].contentRect.width);
+      }
+    });
+
+    if (boxRef.current) {
+      resizeObserver.observe(boxRef.current);
+    }
+
+    return () => {
+      if (boxRef.current) {
+        resizeObserver.unobserve(boxRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    console.log(boxWidth);
+  }, [boxWidth]);
 
   const panoClickHandler = () => {
     navigate(data.navigate, {
@@ -13,22 +43,38 @@ const BlockTwo = ({ data, index }) => {
       },
     });
   };
-
+  // className={`${
+  //   index % 2 === 0
+  //     ? "h-[750px] px-3 md:pr-6 flex flex-col gap-10 bg-pink-500 md:w-[500px] lg:w-[500px]"
+  //     : "h-[750px] px-3 md:pl-6 flex flex-col gap-10 bg-gray-500 md:w-[500px] lg:w-[500px]"
+  // }`}
   return (
-    <div
-      className={`${
-        index % 2 === 0
-          ? "h-[750px] px-3 md:pr-6 flex flex-col gap-10"
-          : "h-[750px] px-3 md:pl-6 flex flex-col gap-10"
-      }`}
+    <Box
+      // ref={boxRef}
+      sx={{
+        height: "800px",
+        width: { xs: "500px" },
+        // bgcolor: "red",
+        px: 3,
+        display: "flex",
+        flexDirection: "column",
+        gap: 3,
+        ...(isEven ? { pr: 6 } : { pl: 6 }),
+      }}
     >
-      <Box sx={{ height: "45%", width: "100%" }}>
+      <Box
+        sx={{
+          height: "45%",
+          width: "100%",
+          // bgcolor: "red"
+        }}
+      >
         <Button onClick={panoClickHandler}>
           <CardMedia
             sx={{
               borderRadius: 4,
-              height: "40vh",
-              width: "80vh",
+              height: "350px",
+              width: "100%",
               display: "inline-grid",
               overflow: "hidden",
               "&:hover": {
@@ -43,34 +89,28 @@ const BlockTwo = ({ data, index }) => {
           />
         </Button>
       </Box>
+
       <Box
         sx={{
-          height: "40%",
+          height: { xs: "40%", lg: "35%", xl: "25%" },
           width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          gap: 4,
+          // bgcolor: "blue",
         }}
       >
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>
           {data.title}
         </Typography>
+
+        {boxWidth > 350}
         <Typography variant="p">{data.text}</Typography>
-        {/* {data.textTwo && (
-        <Typography
-          variant="p"
-          sx={{
-            maxWidth: "100ch",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {data.textTwo}
-        </Typography>
-      )} */}
       </Box>
-      <Box sx={{ height: "15%" }}>
+
+      <Box
+        sx={{
+          height: "10%",
+          // bgcolor: "wheat"
+        }}
+      >
         <Link to={data.navigate}>
           <Button
             sx={{
@@ -91,7 +131,7 @@ const BlockTwo = ({ data, index }) => {
           </Button>
         </Link>
       </Box>
-    </div>
+    </Box>
   );
 };
 

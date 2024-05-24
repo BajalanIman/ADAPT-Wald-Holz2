@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import TopLogo from "./TopLogo";
 
 const PageOne = () => {
   const theme = useTheme();
@@ -20,13 +21,14 @@ const PageOne = () => {
         mb: 8,
       }}
     >
-      <Link to="/">
+      <TopLogo />
+      {/* <Link to="/">
         <img
           src={adapt}
           alt="adapt"
           style={{ width: isSmallScreen ? "100px" : "200px" }}
         />
-      </Link>
+      </Link> */}
       <Box>
         <Typography
           variant={isSmallScreen ? "h4" : "h2"}

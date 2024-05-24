@@ -10,64 +10,54 @@ import mpl from "./../../assets/MPI_Logo_Kolloid-und Grenzflächenforschung_DE_C
 import regulus from "./../../assets/logo-regulus_mit_subline.png";
 
 const Footer = () => {
+  const imageStyle = {
+    width: "100px",
+    height: "100px",
+    objectFit: "contain",
+  };
+
   return (
     <Box sx={{ mt: 10, pb: 5, px: { xs: 2, md: 0 } }}>
       <Divider />
       <Grid container spacing={4} justifyContent="center" sx={{ py: 6 }}>
         <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
               src={hnee}
               alt="hnee"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "180px", height: "140px", objectFit: "contain" }}
             />
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ textAlign: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <img
               src={lefForst}
               alt="lefForst"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "150px", height: "150px", objectFit: "contain" }}
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ textAlign: "center" }}>
+        <Grid item xs={12} sm={4} md={2}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
-              src={thuenen}
-              alt="thuenen"
-              style={{ maxWidth: "100%", height: "auto" }}
+              src={regulus}
+              alt="regulus"
+              style={{ width: "170px", height: "150px", objectFit: "contain" }}
             />
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
               src={zalf}
               alt="zalf"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ textAlign: "center" }}>
-            <img
-              src={mpl}
-              alt="mpl"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
-          </Box>
-        </Grid>
-      </Grid>
-      <Divider />
-      <Grid container spacing={4} justifyContent="center" sx={{ py: 3 }}>
-        <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ textAlign: "center" }}>
-            <img
-              src={bmbfGefördert}
-              alt="bmbfGefördert"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "100px", height: "140px", objectFit: "contain" }}
             />
           </Box>
         </Grid>
@@ -76,16 +66,37 @@ const Footer = () => {
             <img
               src={bmfFONA}
               alt="FONA"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{ width: "180px", height: "140px", objectFit: "contain" }}
             />
           </Box>
         </Grid>
+      </Grid>
+      <Divider />
+      <Grid container spacing={4} justifyContent="center" sx={{ py: 3 }}>
         <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ textAlign: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
-              src={regulus}
-              alt="regulus"
-              style={{ maxWidth: "100%", height: "auto" }}
+              src={bmbfGefördert}
+              alt="bmbfGefördert"
+              style={{ width: "180px", height: "140px", objectFit: "contain" }}
+            />
+          </Box>
+        </Grid>
+        <Grid item xs={6} sm={4} md={3}>
+          <Box sx={{ display: "flex", justifyContent: "start" }}>
+            <img
+              src={mpl}
+              alt="mpl"
+              style={{ width: "300px", height: "140px", objectFit: "contain" }}
+            />
+          </Box>
+        </Grid>
+        <Grid item xs={6} sm={4} md={2}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <img
+              src={thuenen}
+              alt="thuenen"
+              style={{ width: "180px", height: "140px", objectFit: "contain" }}
             />
           </Box>
         </Grid>

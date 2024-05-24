@@ -11,6 +11,7 @@ import PageSix from "./Pages/blocks/PageSix";
 import PageSeven from "./Pages/blocks/PageSeven";
 import PageEight from "./Pages/blocks/PageEight";
 import Imprint from "./Pages/blocks/Imprint";
+import { Box } from "@mui/material";
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,20 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-      <div className="flex w-full h-full">
-        <RouterProvider router={router}></RouterProvider>
-      </div>
+      <Box
+        sx={{
+          display: "flex",
+          height: "full",
+          width: "full",
+          justifyContent: "center",
+          bgcolor: "#ededed",
+        }}
+        // className="flex h-full w-full justify-center bg-gray-400"
+      >
+        <div className="flex h-full max-w-[1920px] bg-white">
+          <RouterProvider router={router}></RouterProvider>
+        </div>
+      </Box>
     </>
   );
 }

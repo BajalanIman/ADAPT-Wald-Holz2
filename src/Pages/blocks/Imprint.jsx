@@ -1,5 +1,5 @@
+import TopLogo from "./TopLogo";
 import Footer from "./Footer";
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
 import React from "react";
 import { Typography, Box, Link } from "@mui/material";
@@ -7,28 +7,32 @@ import { Typography, Box, Link } from "@mui/material";
 const Imprint = () => {
   return (
     <div className=" w-full ml-24 pr-24 mb-8">
-      <Box sx={{ textAlign: "center", mt: 4 }}>
-        <Link to="/">
-          <img src={adapt} alt="adapt" className="w-80" />
-        </Link>
-      </Box>
-
-      <Box mt={5}>
-        <Typography variant="h5" gutterBottom>
+      <TopLogo />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          mt: 5,
+          gap: 2,
+        }}
+      >
+        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
           Haftungshinweis
         </Typography>
-        <Typography variant="body1" gutterBottom>
+        <Typography variant="body1">
           Wir bemühen uns, auf unserer Website richtige, aktuelle und
           vollständige Informationen bereit zu stellen und behalten uns vor, die
           Informationen jederzeit ohne vorherige Ankündigung zu ändern oder zu
           ergänzen.
-          <br />
+        </Typography>
+        <Typography variant="body1">
           Wir übernehmen keine Gewähr für die Aktualität, Richtigkeit und
           Vollständigkeit der Informationen. Dies gilt auch für die Inhalte
           externer Websites, auf die in dieser Website über Hyperlinks direkt
           oder indirekt verwiesen wird und auf deren Inhalt und Gestaltung wir
           keinen Einfluss haben.
-          <br />
+        </Typography>
+        <Typography variant="body1">
           Der Inhalt dieser Website ist urheberrechtlich geschützt. Er darf frei
           verwendet werden, solange der Verfasser und die Quelle eindeutig
           benannt werden und ein Backlink zur Quelle{" "}
@@ -37,12 +41,16 @@ const Imprint = () => {
             target="_blank"
             rel="noopener"
           >
-            www.Wald-Reallabor.de
+            www.Wald-Reallabor.de{" "}
           </Link>
           im Rahmen der Verwendung angebracht wird.
         </Typography>
-        <Box sx={{}}>
-          <Typography variant="h4" gutterBottom>
+        <Box sx={{ mt: 5 }}>
+          <Typography
+            variant="h4"
+            sx={{ fontWeight: "bold", mb: 2 }}
+            gutterBottom
+          >
             Impressum
           </Typography>
           <Typography variant="body1" gutterBottom>
