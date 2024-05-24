@@ -5,46 +5,45 @@ import Footer from "./Footer";
 import TopLogo from "./TopLogo";
 
 import { Link, useLocation } from "react-router-dom";
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, CardMedia } from "@mui/material";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageFour = () => {
   const location = useLocation();
   const { state } = location;
 
   return (
-    <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
-      <TopLogo />
-      {/* <Box sx={{ textAlign: "center", mt: 4 }}>
-        <Link to="/">
-          <img src={adapt} alt="adapt" className="w-60" />
-        </Link>
-      </Box> */}
+    <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <SidbarMobileHandler />
+      {/* <TopLogo /> */}
       <Typography
-        variant="h2"
+        variant="h5"
         sx={{
-          my: 4,
+          my: { xs: 4, md: 8 },
           fontWeight: "bold",
           color: "#2b2b2b",
           textAlign: { xs: "center", md: "start" },
-          fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
         }}
       >
         Page4-title: REGULUS
       </Typography>
-      <Box sx={{ display: "flex", justifyContent: "center", mb: 8 }}>
-        <Box
+      <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
+        <CardMedia
           component="img"
           src={image4}
           alt="image4"
           sx={{
-            maxHeight: { xs: "40vh", md: "40vh", lg: "50vh" },
+            maxHeight: { xs: "35vh", md: "35vh", lg: "35vh" },
             width: "100%",
             objectFit: "contain",
           }}
         />
       </Box>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page4-P1: Wälder leisten Herausragendes für unsere Lebensgrundlagen.
           Sie schützen Klima, Wasser und Biodiversität. Sie bieten Erholungsraum
           und liefern mit dem Rohstoff Holz eine Ressource mit zentraler
@@ -55,7 +54,10 @@ const PageFour = () => {
           Fragen, die nicht mehr durch sektorale Forschungsansätze bearbeitet
           werden können.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page4-P2: Daher besteht das zentrale Anliegen der
           <a
             target="_blank"
@@ -84,7 +86,10 @@ const PageFour = () => {
           Altholznutzung erforscht. Darüber hinaus werden digitale Instrumente
           entwickelt, um die Dynamiken von Waldökosystemen zu verstehen..
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page4-P3: Derzeit wird in zehn regionalen REGULUS-Innovationsgruppen
           in ganz Deutschland inter- und transdisziplinär geforscht. Die
           unterschiedlichen REGULUS-Innovationsgruppen, zusammengesetzt aus

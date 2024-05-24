@@ -1,28 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import image3 from "./../../assets/page3.jpg";
 import Footer from "./Footer";
 import TopLogo from "./TopLogo";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageThree = () => {
   return (
-    <div className=" w-full ml-24 pr-24 mb-8">
-      <TopLogo />
-      {/* <Link to="/">
-        <img src={adapt} alt="adapt" className="w-60" />
-      </Link> */}
+    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <SidbarMobileHandler />
+      {/* <TopLogo /> */}
       <Box>
         <Typography
-          variant="h2"
+          variant="h5"
           sx={{
-            my: 4,
+            my: { xs: 4, md: 8 },
             fontWeight: "bold",
             color: "#2b2b2b",
             textAlign: { xs: "center", md: "start" },
-            fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
           }}
         >
           Page3-title: InnoFoum Wald und Holz
@@ -31,32 +28,43 @@ const PageThree = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            borderRadius: 5,
+            marginY: 4,
           }}
         >
-          <Box
+          <CardMedia
             component="img"
             src={image3}
             alt="example1"
             sx={{
-              maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
-              width: "100%",
-              objectFit: "contain",
+              height: { xs: "200px", md: "500px" },
+              width: "full",
+              borderRadius: 0,
             }}
           />
         </Box>
       </Box>
       <Box
-        sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 6 }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          my: 4,
+        }}
       >
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page3-P1: Das regionale Forschungscluster Wald-Holz am Standort
           Eberswalde liefert durch seine Vernetzung mit Schlüsselakteuren der
           brandenburgischen Wald- und Holzwirtschaft die Basis für erfolgreichen
           Wissenstransfer und damit für eine Transformation der Wald- und
           Holzwirtschaft.
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page3-P2: Mit dem Aufbau eines Innovationsforums (InnoForum Wald und
           Holz), in dem forst- und holzwirtschaftliche mit nicht-forstlichen
           Akteuren zusammenarbeiten, wird eine transfer-freundliche Umgebung
@@ -73,15 +81,6 @@ const PageThree = () => {
           werden..
         </Typography>
       </Box>
-
-      {/*  <Box>
-        <Typography variant="h5" sx={{ marginY: 3, fontWeight: "bold" }}>
-          Page3-Subtitle2:
-        </Typography>
-        <Box
-          sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 4 }}
-        ></Box>
-      </Box> */}
       <Footer />
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import NavigationDrawers from "./NavigationDrawers";
-import Sidebar from "./blocks/Sidebar";
+import SidebarMobile from "./SidebarMobile";
 
 const Root = () => {
   return (

@@ -7,14 +7,13 @@ import TopLogo from "./TopLogo";
 
 const BlockOne = () => {
   return (
-    <div className="md:my-12">
+    <div className="md:my-12 w-full">
       {/* <TopLogo /> */}
-      <div className="relative mt-12 ml-9 md:ml-0 border-2 border-white w-[680px] md:w-full">
+      <div className="relative mt-12 w-full px-6">
         <CardMedia
           sx={{
-            height: { xs: "300px", md: "350px" },
+            height: { xs: "200px", md: "350px" },
             width: "full",
-            paddingX: 3,
             borderRadius: 0,
           }}
           component="img"
@@ -30,7 +29,7 @@ const BlockOne = () => {
               fontFamily: "Alfa Slab One",
               color: "black",
               opacity: "85%",
-              fontSize: { xs: 20, md: 25, lg: 45 },
+              fontSize: { xs: 16, md: 25, lg: 45 },
               WebkitTextStrokeWidth: "1px", // Adjust stroke width
               WebkitTextStrokeColor: "white", // Adjust stroke color
             }}

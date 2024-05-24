@@ -74,7 +74,7 @@ const CostumData = [
     image: image7,
     title:
       "Page7-title: Konzepte zukünftiger Holzverwendung im Hinblick auf eine regionale Ressourcen-Bereitstellung",
-    text: "Page7-p1: Mit dem Anspruch der langjährigen C-Bindung und einer Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen Produkten, insbesondere im Holzbau angestrebt und die Wiederverwendung und -verwertung nach der Lebensdauer mitgedacht.",
+    text: "Page7-p1: Mit dem Anspruch der langjährigen C-Bindung und einer Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen Produkten, insbesondere im Holzbau angestrebt und die Wiederverwendung und -verwertung...",
     textTwo:
       "Page7-p1: Wesentliche Einflussfaktoren auf physikalische Eigenschaften sind die Holzart sowie Standort- und Klimafaktoren während des Baumwachstums. An Bäumen des Waldreallabors sollen insbesondere Astigkeit, Faserverläufe, Dichten, Jahrringbreiten, Früh-, Spät- und Druckholzanteile sowie Zellulosefibrillenwinkel untersucht werden, die für die Mechanik, aber auch für das Quell- und Schwindverhalten eine zentrale Rolle spielen. Dabei werden die Einflüsse der jeweiligen Umweltbedingungen im Waldreallabor sowie des Standortes und der Wuchsform erfasst und mit den gewonnenen Kennwerten in Bezug gesetzt werden (Schnittstelle Modul A  und Modul B ).",
     btn: "Mehr sehen",

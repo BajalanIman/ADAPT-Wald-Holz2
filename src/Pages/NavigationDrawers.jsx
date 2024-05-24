@@ -19,7 +19,7 @@ const NavigationDrawers = () => {
   };
 
   return (
-    <Box className="relative flex h-screen transition-all duration-300 ">
+    <Box sx={{ display: { xs: "none", md: "flex" } }}>
       <Box
         sx={{
           position: "fixed",
@@ -29,20 +29,43 @@ const NavigationDrawers = () => {
         }}
       >
         {!sideBarSize && (
-          <img
-            onClick={toggleSidebarSize}
-            src={adapt}
-            alt="Logo"
-            style={{
-              cursor: "pointer",
-              width: "40px",
-              height: "auto",
-              border: "1px solid gray",
-              borderRadius: "100%",
-              boxShadow: "2px 1px 3px  darkred",
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column-reverse",
+              justifyContent: "center",
             }}
-          />
-
+          >
+            <Link to="/">
+              <img
+                // onClick={toggleSidebarSize}
+                src={adapt}
+                alt="Logo"
+                style={{
+                  cursor: "pointer",
+                  width: "40px",
+                  height: "auto",
+                  border: "1px solid gray",
+                  borderRadius: "100%",
+                  boxShadow: "2px 1px 3px  darkred",
+                  marginLeft: 15,
+                }}
+              />
+            </Link>
+            <Button
+              onClick={toggleSidebarSize}
+              sx={{
+                color: "green",
+                backgroundColor: "none",
+                "&:hover": {
+                  color: "#4169E1",
+                  backgroundColor: "none",
+                },
+              }}
+            >
+              <DensityMediumIcon fontSize="large" />
+            </Button>
+          </Box>
           // <Button
           //   onClick={toggleSidebarSize}
           //   sx={{
@@ -75,19 +98,21 @@ const NavigationDrawers = () => {
         <List sx={{ mt: 0 }}>
           <Box sx={{ display: "flex", my: 2 }}>
             <ListItem>
-              <img
-                onClick={toggleSidebarSize}
-                src={adapt}
-                alt="Logo"
-                style={{
-                  cursor: "pointer",
-                  width: "35%",
-                  height: "auto",
-                  border: "1px solid gray",
-                  borderRadius: "100%",
-                  boxShadow: "2px 1px 3px  darkred",
-                }}
-              />
+              <Link to="/">
+                <img
+                  // onClick={toggleSidebarSize}
+                  src={adapt}
+                  alt="Logo"
+                  style={{
+                    cursor: "pointer",
+                    width: "35%",
+                    height: "auto",
+                    border: "1px solid gray",
+                    borderRadius: "100%",
+                    boxShadow: "2px 1px 3px  darkred",
+                  }}
+                />
+              </Link>
             </ListItem>
             <Button
               onClick={toggleSidebarSize}

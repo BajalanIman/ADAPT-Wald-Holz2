@@ -1,48 +1,46 @@
 import React from "react";
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import image6 from "./../../assets/page6.png";
 import Footer from "./Footer";
+import SidbarMobileHandler from "../SidbarMobileHandler";
+import TopLogo from "./TopLogo";
 
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
-import TopLogo from "./TopLogo";
+import { Box, CardMedia, Typography } from "@mui/material";
 
 const PageSix = () => {
   return (
-    <Box sx={{ width: "100%", px: { xs: 2, sm: 4, md: 6, lg: 8 }, mb: 8 }}>
-      <TopLogo />
-      {/* <Box sx={{ textAlign: "center", mt: 4 }}>
-        <Link to="/">
-          <img src={adapt} alt="adapt" className="w-60" />
-        </Link>
-      </Box> */}
+    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <SidbarMobileHandler />
+      {/* <TopLogo /> */}
       <Typography
-        variant="h2"
+        variant="h5"
         sx={{
-          my: 4,
+          my: { xs: 4, md: 8 },
           fontWeight: "bold",
           color: "#2b2b2b",
           textAlign: { xs: "center", md: "start" },
-          fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
         }}
       >
-        Holzernte-, Holzlogistik- und Datenaustauschkonzepte für die
+        Page6: Holzernte-, Holzlogistik- und Datenaustauschkonzepte für die
         Holzbereitstellungskette
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-        <Box
+        <CardMedia
           component="img"
           src={image6}
           alt="image6"
           sx={{
-            maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
-            width: "100%",
-            objectFit: "contain",
+            height: { xs: "200px", md: "500px" },
+            width: { xs: "full", md: "50%" },
+            borderRadius: 0,
           }}
         />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page6-P1: Kernstück der Bemühungen zur Optimierung der
           Rohstoffversorgung und des zugehörigen Datenaustauschs sowie zur
           Erhöhung von Transparenz und Vertrauen zwischen der Wald- und der
@@ -69,7 +67,10 @@ const PageSix = () => {
           </Link>
           ).
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: { md: "justify" }, mb: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page6-P2: Es werden relevante Elemente der Holzbereitstellungskette
           detailliert untersucht und optimiert. So sollen die
           Einsatzmöglichkeiten von teilmechanisierten Holzernteverfahren unter
@@ -84,7 +85,7 @@ const PageSix = () => {
         </Typography>
       </Box>
       <Footer />
-    </Box>
+    </div>
   );
 };
 

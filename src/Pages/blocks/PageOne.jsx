@@ -3,10 +3,11 @@ import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import example1 from "./../../assets/example1.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import TopLogo from "./TopLogo";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageOne = () => {
   const theme = useTheme();
@@ -14,42 +15,39 @@ const PageOne = () => {
   const isMediumScreen = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        padding: isSmallScreen ? 2 : isMediumScreen ? 4 : 6,
-        mb: 8,
-      }}
-    >
-      <TopLogo />
-      {/* <Link to="/">
-        <img
-          src={adapt}
-          alt="adapt"
-          style={{ width: isSmallScreen ? "100px" : "200px" }}
-        />
-      </Link> */}
-      <Box>
-        <Typography
-          variant={isSmallScreen ? "h4" : "h2"}
-          sx={{
-            my: 4,
-            fontWeight: "bold",
-            color: "#2b2b2b",
-            textAlign: { xs: "center", md: "start" },
-            fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "3rem" },
-          }}
-        >
-          Page1-title: Die Projektidee
-        </Typography>
-        <img
+    <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24">
+      <SidbarMobileHandler />
+      {/* <TopLogo /> */}
+      <Typography
+        variant="h5"
+        sx={{
+          my: { xs: 4, md: 8 },
+          fontWeight: "bold",
+          color: "#2b2b2b",
+          textAlign: { xs: "center", md: "start" },
+        }}
+      >
+        Page1-title: Die Projektidee
+      </Typography>
+      <Box sx={{ display: "flex", justifyContent: "center", marginY: 4 }}>
+        <CardMedia
+          component="img"
           src={example1}
-          alt="example1"
-          style={{ maxHeight: "500px", width: "100%", objectFit: "cover" }}
+          alt="image1"
+          sx={{
+            height: { xs: "200px", md: "500px" },
+            width: "full",
+            borderRadius: 0,
+          }}
         />
       </Box>
-      <Box sx={{ marginY: 4 }}>
-        <Typography variant="h6" sx={{ textAlign: "justify", marginBottom: 2 }}>
+      <Box
+        sx={{ display: "flex", flexDirection: "column", gap: 2, marginTop: 4 }}
+      >
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page1-P1: Im Projekt ADAPT-Wald-Holz wird ein adaptives, also
           anpassungsfähiges, Wald-Holz-Managementsystem für die Region
           Brandenburg-Berlin am Beispiel der Waldkiefer entwickelt. Im Fokus
@@ -62,15 +60,14 @@ const PageOne = () => {
         </Typography>
         {/* Additional paragraphs can be included here */}
       </Box>
-
-      <Box sx={{ marginY: 4 }}>
-        <Typography
-          variant={isSmallScreen ? "h6" : "h5"}
-          sx={{ marginY: 2, fontWeight: "bold", textAlign: "center" }}
-        >
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 1, mt: 1 }}>
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page1-Subtitle2: Wälder schützen und Kiefernholz nachhaltig nutzen
         </Typography>
-        <Typography variant="h6" sx={{ textAlign: "justify", marginBottom: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page1-P2: Die Erhaltung der Wälder und deren erforderliche Anpassung
           an den Klimawandel sind Schlüsselaufgaben im integrativen Klimaschutz.
           Hinzu kommt eine möglichst langfristige Kohlenstoffbindung durch die
@@ -96,14 +93,14 @@ const PageOne = () => {
           den Grundstein, um die Holzbauquote in Berlin-Brandenburg zu steigern.
         </Typography>
 
-        <Typography
-          variant={isSmallScreen ? "h6" : "h5"}
-          sx={{ marginY: 2, fontWeight: "bold", textAlign: "center" }}
-        >
+        <Typography variant="h6" sx={{ textAlign: { md: "justify" } }}>
           Page1-Subtitle3: Der Nachwuchs schafft Innovationen
         </Typography>
 
-        <Typography variant="h6" sx={{ textAlign: "justify", marginBottom: 2 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
           Page1-P3: Die Innovationsgruppe, bestehend aus wissenschaftlichen
           Nachwuchskräften, wird räumlich zusammengeführt und bildet ein agiles
           transdisziplinäres Forschungsteam. Die Forscherinnen und Forscher

@@ -1,24 +1,22 @@
 import React from "react";
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import image8 from "./../../assets/page8.jpg";
 import Footer from "./Footer";
 
 import { Link } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box, CardMedia, Typography } from "@mui/material";
 import TopLogo from "./TopLogo";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageEight = () => {
   return (
-    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
-      <TopLogo />
-      {/* <Link to="/">
-        <img src={adapt} alt="adapt" className="w-60" />
-      </Link> */}
+    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8 ">
+      <SidbarMobileHandler />
+      {/* <TopLogo /> */}
       <Box>
         <Typography
-          variant="h2"
+          variant="h5"
           sx={{
-            marginY: { xs: 4, md: 10 },
+            marginY: { xs: 4, md: 8 },
             fontWeight: "bold",
             color: "#2b2b2b",
             textAlign: { xs: "center", md: "start" },
@@ -27,22 +25,29 @@ const PageEight = () => {
           Projektkonsortium
         </Typography>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", marginY: 8 }}>
-        <Box
+      <Box
+        sx={{
+          display: "flex",
+          width: "full",
+          justifyContent: "center",
+          marginY: 4,
+        }}
+      >
+        <CardMedia
           component="img"
           src={image8}
           alt="image8"
           sx={{
-            maxHeight: { xs: "60vh", md: "70vh", lg: "70vh" },
-            width: "100%",
-            objectFit: "contain",
+            height: { xs: "200px", md: "500px" },
+            width: "full",
+            borderRadius: 0,
           }}
         />
       </Box>
       <Box
         sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 4 }}
       >
-        <Typography variant="h6" sx={{ textAlign: "justify" }}>
+        <Typography variant="body2" sx={{ textAlign: { md: "justify" } }}>
           Page8-P1: Das innovative, regionale Forschungscluster entsteht am
           Waldcampus Eberswalde. Federführend verknüpft die{" "}
           <a
