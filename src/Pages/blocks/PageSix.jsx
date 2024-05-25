@@ -30,7 +30,7 @@ const PageSix = () => {
           src={image6}
           alt="image6"
           sx={{
-            height: { xs: "200px", md: "500px" },
+            height: { xs: "200px", md: "400px" },
             width: { xs: "full", md: "50%" },
             borderRadius: 0,
           }}

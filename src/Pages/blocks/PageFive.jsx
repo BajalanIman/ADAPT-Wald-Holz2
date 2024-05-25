@@ -64,7 +64,7 @@ const PageFive = () => {
             src={image5}
             alt="image5"
             sx={{
-              height: { xs: "200px", md: "500px" },
+              height: { xs: "200px", md: "400px" },
               width: "full",
               borderRadius: 0,
             }}

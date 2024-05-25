@@ -36,7 +36,7 @@ const PageThree = () => {
             src={image3}
             alt="example1"
             sx={{
-              height: { xs: "200px", md: "500px" },
+              height: { xs: "200px", md: "400px" },
               width: "full",
               borderRadius: 0,
             }}

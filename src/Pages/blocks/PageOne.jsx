@@ -1,6 +1,7 @@
 import React from "react";
 import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import example1 from "./../../assets/example1.jpg";
+import image1 from "./../../assets/page1.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
@@ -32,10 +33,10 @@ const PageOne = () => {
       <Box sx={{ display: "flex", justifyContent: "center", marginY: 4 }}>
         <CardMedia
           component="img"
-          src={example1}
+          src={image1}
           alt="image1"
           sx={{
-            height: { xs: "200px", md: "500px" },
+            height: { xs: "200px", md: "400px" },
             width: "full",
             borderRadius: 0,
           }}
