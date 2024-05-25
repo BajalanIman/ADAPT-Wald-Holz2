@@ -3,16 +3,19 @@ import Footer from "./Footer";
 
 import React from "react";
 import { Typography, Box, Link } from "@mui/material";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const Imprint = () => {
   return (
     <div className=" w-full ml-24 pr-24 mb-8">
+      <SidbarMobileHandler />
+
       {/* <TopLogo /> */}
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          mt: 5,
+          mt: 3,
           gap: 2,
         }}
       >

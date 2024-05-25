@@ -13,13 +13,28 @@ const Footer = () => {
   return (
     <Box sx={{ width: "100%", mt: 8, pb: 5, px: { xs: 2, md: 0 } }}>
       <Divider />
-      <Grid container spacing={4} justifyContent="center" sx={{ py: 6 }}>
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        sx={{ py: { sm: 2, lg: 6 } }}
+      >
         <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              mt: { xs: 3, md: 2 },
+            }}
+          >
             <img
               src={hnee}
               alt="hnee"
-              style={{ width: "180px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "180px",
+                height: { sm: "140px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
@@ -33,7 +48,11 @@ const Footer = () => {
             <img
               src={lefForst}
               alt="lefForst"
-              style={{ width: "150px", height: "150px", objectFit: "contain" }}
+              style={{
+                width: "150px",
+                height: { sm: "100px", md: "150px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
@@ -44,7 +63,7 @@ const Footer = () => {
               alt="regulus"
               style={{
                 width: "170px",
-                height: "150px",
+                height: { sm: "100px", md: "150px" },
                 objectFit: "contain",
               }}
             />
@@ -55,7 +74,11 @@ const Footer = () => {
             <img
               src={zalf}
               alt="zalf"
-              style={{ width: "100px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "100px",
+                height: { sm: "100px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
@@ -64,19 +87,32 @@ const Footer = () => {
             <img
               src={bmfFONA}
               alt="FONA"
-              style={{ width: "180px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "180px",
+                height: { sm: "100px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
       </Grid>
       <Divider />
-      <Grid container spacing={4} justifyContent="center" sx={{ py: 3 }}>
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        sx={{ py: { sm: 2, md: 3 } }}
+      >
         <Grid item xs={6} sm={4} md={3}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
               src={bmbfGefördert}
               alt="bmbfGefördert"
-              style={{ width: "180px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "180px",
+                height: { sm: "100px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
@@ -85,16 +121,29 @@ const Footer = () => {
             <img
               src={thuenen}
               alt="thuenen"
-              style={{ width: "180px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "180px",
+                height: { sm: "100px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
-          <Box sx={{ display: "flex", justifyContent: "start" }}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "start",
+            }}
+          >
             <img
               src={mpl}
               alt="mpl"
-              style={{ width: "300px", height: "140px", objectFit: "contain" }}
+              style={{
+                width: "300px",
+                height: { sm: "100px", md: "140px" },
+                objectFit: "contain",
+              }}
             />
           </Box>
         </Grid>

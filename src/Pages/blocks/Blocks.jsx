@@ -22,7 +22,9 @@ const Blocks = () => {
 
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8 sm:px-4 md:px-0 flex flex-col items-center">
-      <SidbarMobileHandler />
+      <Box sx={{ width: "90%" }}>
+        <SidbarMobileHandler />
+      </Box>
       {/* <Box
         sx={{
           display: { xs: "flex", md: "none" },

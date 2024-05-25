@@ -15,16 +15,16 @@ const SidbarMobileHandler = () => {
     setOpen(false);
   };
   return (
-    <>
+    <Box sx={{ width: "100%" }}>
       <Box
         sx={{
           display: { xs: "flex", md: "none" },
-          width: "90%",
+          width: "100%",
           px: 3,
           py: 1,
           mt: 1,
           justifyContent: "space-between",
-          bgcolor: "lightgray",
+          bgcolor: "#009688",
           borderRadius: 20,
           boxShadow: "2px 2px 2px",
         }}
@@ -45,11 +45,11 @@ const SidbarMobileHandler = () => {
           />
         </Link>
         <Button onClick={handleopen}>
-          <DensityMediumIcon />
+          <DensityMediumIcon style={{ color: "black" }} />
         </Button>
       </Box>
       <SidebarMobile onClose={handleClose} open={open} />
-    </>
+    </Box>
   );
 };
 

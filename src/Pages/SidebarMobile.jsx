@@ -27,13 +27,13 @@ const SidebarMobile = (props) => {
 
   return (
     <div>
-      <Dialog onClose={onClose} open={open} className="bg-gray-500 opacity-95">
+      <Dialog onClose={onClose} open={open} className="bg-gray-500 opacity-98">
         <Box
           sx={{
             px: 4,
             display: "flex",
             justifyContent: "space-between",
-            my: 2,
+            my: 1,
           }}
         >
           <ListItem>
@@ -43,7 +43,7 @@ const SidebarMobile = (props) => {
               alt="Logo"
               style={{
                 cursor: "pointer",
-                width: "15%",
+                width: "25%",
                 height: "auto",
                 border: "1px solid gray",
                 borderRadius: "100%",
