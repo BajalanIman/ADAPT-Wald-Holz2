@@ -1,106 +1,114 @@
 import React from "react";
-import image8 from "./../../assets/page8.jpg";
+import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
+import image4 from "./../../assets/page4.jpg";
 import Footer from "./Footer";
-
-import { Link } from "react-router-dom";
-import { Box, CardMedia, Typography } from "@mui/material";
 import TopLogo from "./TopLogo";
+
+import { Link, useLocation } from "react-router-dom";
+import { Box, Typography, Grid, CardMedia } from "@mui/material";
 import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageEight = () => {
+  const location = useLocation();
+  const { state } = location;
+
   return (
-    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8 ">
+    <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
       {/* <TopLogo /> */}
-      <Box>
-        <Typography
-          variant="h5"
-          sx={{
-            marginY: { xs: 4, md: 8 },
-            fontWeight: "bold",
-            color: "#2b2b2b",
-            textAlign: { xs: "center", md: "start" },
-          }}
-        >
-          Projektkonsortium
-        </Typography>
-      </Box>
-      <Box
+      <Typography
+        variant="h5"
         sx={{
-          display: "flex",
-          width: "full",
-          justifyContent: "center",
-          marginY: 4,
+          my: { xs: 4, md: 8 },
+          fontWeight: "bold",
+          color: "#2b2b2b",
+          textAlign: { xs: "center", md: "start" },
         }}
       >
+        Page8-title: REGULUS
+      </Typography>
+      <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
         <CardMedia
           component="img"
-          src={image8}
-          alt="image8"
+          src={image4}
+          alt="image4"
           sx={{
-            height: { xs: "200px", md: "400px" },
-            width: "full",
-            borderRadius: 0,
+            maxHeight: { xs: "35vh", md: "35vh", lg: "35vh" },
+            width: "100%",
+            objectFit: "contain",
           }}
         />
       </Box>
-      <Box
-        sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 4 }}
-      >
-        <Typography variant="body2" sx={{ textAlign: { md: "justify" } }}>
-          Page8-P1: Das innovative, regionale Forschungscluster entsteht am
-          Waldcampus Eberswalde. Federführend verknüpft die{" "}
+      <Box sx={{ my: 4 }}>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page8-P1: Wälder leisten Herausragendes für unsere Lebensgrundlagen.
+          Sie schützen Klima, Wasser und Biodiversität. Sie bieten Erholungsraum
+          und liefern mit dem Rohstoff Holz eine Ressource mit zentraler
+          Bedeutung für die Wirtschaft. Die aktuellen Herausforderungen für die
+          Wälder durch Stürme, Trockenheit und Schädlinge sind mit wachsenden
+          und immer vielfältigeren Ansprüchen der Gesellschaft verbunden. In der
+          Folge stehen das Waldmanagement und die Holzwirtschaft vor drängenden
+          Fragen, die nicht mehr durch sektorale Forschungsansätze bearbeitet
+          werden können.
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page8-P2: Daher besteht das zentrale Anliegen der
           <a
             target="_blank"
-            className="pointer text-[#4169E1] px-2"
-            href="https://www.hnee.de"
+            className="pointer text-blue-500 px-2"
+            href="https://regulus-waldholz.de/ "
           >
-            Hochschule für nachhaltige Entwicklung Eberswalde
-          </a>{" "}
-          (HNEE) die Eberswalder Forschungseinrichtungen HNEE und das
-          <a
-            target="_blank"
-            className="pointer text-[#4169E1] px-2"
-            href="https://www.thuenen.de/de/fachinstitute/waldoekosysteme"
-          >
-            Thünen-Institut für Waldökosysteme
+            REGULUS -Forschung
           </a>
-          mit den Erfahrungen und Kenntnissen des Wissenstransferpartners LFE
+          darin, inter- und transdisziplinäre Forschung zu stärken und die
+          Forschungslandschaft Wald und Holz aktiv zu gestalten, um
+          zukunftsweisende Strategien für eine klimaschützende Wald- und
+          Holzwirtschaft zu entwickeln. Derzeit wird in Deutschland in zehn
+          regionalen
           <a
             target="_blank"
-            className="pointer text-[#4169E1] px-2"
-            href="https://forst.brandenburg.de/lfb/de/ueber-uns/landeskompetenzzentrum-lfe"
+            className="pointer text-blue-500 px-2"
+            href="https://regulus-waldholz.de/innovationsgruppen/ "
           >
-            (Landeskompetenzzentrum Forst Eberswalde)
+            REGULUS-Innovationsgruppen
           </a>
-          sowie des
+          an konkreten Lösungskonzepten für eine nachhaltige und klimaschützende
+          Wald- und Holzwirtschaft geforscht. Dabei werden klimaangepasste
+          Wald-Holz-Managementsysteme und die Entwicklung multifunktionaler
+          Wälder auf Schadflächen, Möglichkeiten zum Erhalt von
+          Ökosystemleistungen unter Trockenstress und die stoffliche
+          Altholznutzung erforscht. Darüber hinaus werden digitale Instrumente
+          entwickelt, um die Dynamiken von Waldökosystemen zu verstehen..
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page8-P3: Derzeit wird in zehn regionalen REGULUS-Innovationsgruppen
+          in ganz Deutschland inter- und transdisziplinär geforscht. Die
+          unterschiedlichen REGULUS-Innovationsgruppen, zusammengesetzt aus
+          verschiedenen Institutionen und Praxispartnern haben die Umsetzbarkeit
+          und potenzielle Wirkung ihrer Arbeiten und Ergebnisse im Fokus. Die
+          gezielte Förderung von Innovationsprozessen ist ein Merkmal, das durch
+          die Vernetzung maßgeblich unterstützt wird. Auf der
           <a
             target="_blank"
-            className="pointer text-[#4169E1] px-2"
-            href="https://www.mpikg.mpg.de"
+            className="pointer text-blue-500 px-2"
+            href="https://regulus-waldholz.de/innovationsgruppen/#standortkarte "
           >
-            Max-Planck-Instituts für Kolloid- und Grenzflächenforschung
+            REGULUS-Standortkarte
           </a>
-          und des
-          <a
-            target="_blank"
-            className="pointer text-[#4169E1] px-2"
-            href="https://www.zalf.de/de/Seiten/ZALF.aspx"
-          >
-            Leibniz-Zentrums für Agrarlandschaftsforschung (ZALF) e.V.
-          </a>
-          in einer Innovationsgruppe aus Nachwuchswissenschaftler*innen. Alle
-          Verbundpartner bringen ihre komplementären Kompetenzen in das
-          Forschungscluster und die Innovationsgruppe ein und kooperieren in
-          transdisziplinär zusammengesetzten{" "}
-          <Link to="/pagetwo" style={{ color: "#4169E1" }}>
-            Modulen
-          </Link>
-          .
+          sind alle Gruppen und die jeweiligen Beteiligungen aufgeführt..
         </Typography>
       </Box>
       <Footer />
-    </div>
+    </Box>
   );
 };
 

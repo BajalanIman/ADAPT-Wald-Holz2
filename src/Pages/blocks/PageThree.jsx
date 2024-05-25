@@ -1,88 +1,140 @@
 import React from "react";
+import image5 from "./../../assets/page5.jpg";
+import Footer from "./Footer";
+import image6 from "./../../assets/page6.png";
+
 import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
-
-import image3 from "./../../assets/page3.jpg";
-import Footer from "./Footer";
 import TopLogo from "./TopLogo";
 import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageThree = () => {
   return (
-    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+    <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
       {/* <TopLogo /> */}
-      <Box>
-        <Typography
-          variant="h5"
+      <Typography
+        variant="h5"
+        sx={{
+          my: { xs: 4, md: 8 },
+          fontWeight: "bold",
+          color: "#2b2b2b",
+          textAlign: { xs: "center", md: "start" },
+        }}
+      >
+        Potenziale und Grenzen eines adaptiven Waldmanagements in Brandenburg
+        unter Berücksichtigung der zukünftig erforderlichen Ökosystemleistungen
+      </Typography>
+      <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
+        <CardMedia
+          component="img"
+          src={image5}
+          alt="image5"
           sx={{
-            my: { xs: 4, md: 8 },
-            fontWeight: "bold",
-            color: "#2b2b2b",
-            textAlign: { xs: "center", md: "start" },
+            height: { xs: "200px", md: "400px" },
+            width: "full",
+            borderRadius: 0,
           }}
-        >
-          Page3-title: InnoFoum Wald und Holz
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            marginY: 4,
-          }}
-        >
-          <CardMedia
-            component="img"
-            src={image3}
-            alt="example1"
-            sx={{
-              height: { xs: "200px", md: "400px" },
-              width: "full",
-              borderRadius: 0,
-            }}
-          />
-        </Box>
+        />
       </Box>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          my: 4,
+          marginY: 4,
         }}
       >
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page3-P1: Das regionale Forschungscluster Wald-Holz am Standort
-          Eberswalde liefert durch seine Vernetzung mit Schlüsselakteuren der
-          brandenburgischen Wald- und Holzwirtschaft die Basis für erfolgreichen
-          Wissenstransfer und damit für eine Transformation der Wald- und
-          Holzwirtschaft.
+          Page3-P1: Ziel des Moduls ist die Erprobung und Analyse adaptiver
+          Waldmanagement-Verfahren zur Umsetzung des ökologischen Waldumbaus von
+          Kiefernreinbeständen in biodiverse und resiliente Misch- und
+          Laubwaldbestände.
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page3-P2: Mit dem Aufbau eines Innovationsforums (InnoForum Wald und
-          Holz), in dem forst- und holzwirtschaftliche mit nicht-forstlichen
-          Akteuren zusammenarbeiten, wird eine transfer-freundliche Umgebung
-          langfristig in der Region etabliert. Dabei werden Rahmenbedingungen
-          für eine übertragbare, kohärente Strategie zur Lenkung der Stoffströme
-          von Holz entwickelt. Zielgröße ist der größtmögliche
-          volkswirtschaftliche und ökologische Nutzen, vor allem für die in den
-          nächsten zwei bis drei Jahrzehnten in Brandenburg weiterhin
-          dominierende Waldkiefer. Im InnoForum Wald und Holz werden die
-          gewonnenen Erkenntnisse mit Akteuren der Wald- und Holzwirtschaft
-          sowie weiteren Interessensgruppen diskutiert, während gleichzeitig
-          Forschungs- und Diskussionsbedarfe der Praxisakteure in das Vorhaben
-          transdisziplinär zurückgeführt und dort integriert und bearbeitet
-          werden..
+          Page3-P2: Hierzu erfolgt der Aufbau eines regionalen Waldreallabors
+          mit verschiedenen Strukturen und Altersgruppen der Kiefernwälder in
+          Brandenburg. Auf der ca. 30 ha großen Kernfläche des Waldreallabors in
+          der Schorfheide (Nordostbrandenburg) werden anhand real umgesetzter
+          sowie simulierter Behandlungsvarianten (Variationen in
+          Eingriffsstärke, -turnus, räumlichem Strukturdesign,
+          Verjüngungssteuerung etc.) die Effekte unterschiedlicher, zuvor
+          definierter und simulierter Managementszenarien auf die
+          Bestandesvitalität und –produktivität, auf Holzernteverfahren
+          (Schnittstelle Modul B) sowie auf Holzqualität und -quantität
+          (Schnittstelle Modul C) und auf zukünftig relevante
+          Waldökosystemleistungen in der Region Brandenburg-Berlin analysiert.
         </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page3-P3: Die auf der Kernfläche des Waldreallabors implementierten
+          Managementszenarien bzw. die enthaltenen waldbaulichen Strategien
+          werden durch kommunale und private Partnerbetriebe wiederholt, in
+          ihrer Praxistauglichkeit analysiert und mit den Ergebnissen aus der
+          Kernfläche verglichen und bewertet. Das Zusammenspiel der Kernfläche
+          des Projektes mit den Satellitenflächen der Partnerbetriebe stellt das
+          Waldreallabor als Ganzes dar. Zusätzlich werden im sogenannten
+          „Praxisnetzwerk“, das über Dachverbände und Netzwerke eine größere
+          Zahl von Stakeholdern im Bereich Wald und Forst erreicht,
+          Waldbesitzende in geringerer Intensität und Frequenz am Projekt
+          beteiligt.
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page3-P4: Die Daten der Messungen des Bestandesklimas, der
+          Bodenfeuchte und -temperatur, Ansprachen der Zersetzung der Streu, der
+          Totholz- und Vegetationsaufnahmen sowie der Verjüngung werden
+          ausgewertet. Diese Erhebungen lassen Auswirkung der
+          Nutzungsintensitäten auf Klima, Biodiversität und Wasserbereitstellung
+          zu und werden mit Wiederholungsaufnahmen am Boden und der
+          Zeitreihenanalysen aus Fernerkundungsdaten kombiniert. Zusätzlich
+          werden die erhobenen Daten in das Waldwachstumsmodell BWINPro
+          eingebunden um dieses weiterzuentwickeln.
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page3-P5: Die unterschiedlichen Waldbestände im Reallabor werden mit
+          einem tragbaren SLAM-LiDAR-Scanner (PLS) vom Boden und mit einem
+          RTK-UAV aus der Luft digital erfasst und diese digitalen
+          Vollinventurdaten den weiteren Arbeitspaketen im Projekt zur Verfügung
+          gestellt. Dabei liefert der PLS hochaufgelöste (~1cm) Punkte-wolken
+          des Stammbereichs, der Bodenvegetation und der unteren Krone. Die
+          Punktewolken der UAV-Aufnahmen komplettieren den oberen Kronenbereich
+          und dienen zur Georeferenzierung der gesamten 3D Punktewolke. Durch
+          Wiederholungs-aufnahmen nach den durchgeführten
+          Bewirtschaftungsmaßnahmen werden die Punktewolken um eine temporale
+          Dimension erweitert (4D-Punktewolken). Diese ermöglichen die Analyse
+          und Visualisierung von Zuwachs und Kronendynamiken, sowie
+          Verjüngungsmonitoring innerhalb der 4D Punktewolken anhand noch zu
+          entwickelnder digitaler Algorithmik.
+        </Typography>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 8 }}>
+          <CardMedia
+            component="img"
+            src={image6}
+            alt="image6"
+            sx={{
+              height: { xs: "200px", md: "400px" },
+              width: { xs: "full", md: "50%" },
+              borderRadius: 0,
+            }}
+          />
+        </Box>
       </Box>
       <Footer />
-    </div>
+    </Box>
   );
 };
 

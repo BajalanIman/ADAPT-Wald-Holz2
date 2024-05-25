@@ -1,9 +1,9 @@
 import React from "react";
-import image5 from "./../../assets/page5.jpg";
-import Footer from "./Footer";
-
 import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
+import image8 from "./../../assets/page8.jpg";
+
+import Footer from "./Footer";
 import TopLogo from "./TopLogo";
 import SidbarMobileHandler from "../SidbarMobileHandler";
 
@@ -21,103 +21,97 @@ const PageFive = () => {
           textAlign: { xs: "center", md: "start" },
         }}
       >
-        Potenziale und Grenzen eines adaptiven Waldmanagements in Brandenburg
-        unter Berücksichtigung der zukünftig erforderlichen Ökosystemleistungen
+        Konzepte zukünftiger Holzverwendung im Hinblick auf eine regionale
+        Ressourcen-Bereitstellung
       </Typography>
+      <Box sx={{ display: "flex", justifyContent: "center", marginY: 4 }}>
+        <CardMedia
+          component="img"
+          src={image8}
+          alt="image7"
+          sx={{
+            height: { xs: "200px", md: "400px" },
+            width: "full",
+            borderRadius: 0,
+          }}
+        />
+      </Box>
       <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          marginY: 4,
-        }}
+        sx={{ display: "flex", flexDirection: "column", gap: 2, marginY: 4 }}
       >
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page5-P1: Ziel des Moduls ist die Erprobung und Analyse adaptiver
-          Waldmanagement-Verfahren zur Umsetzung des ökologischen Waldumbaus von
-          Kiefernreinbeständen in biodiverse und resiliente Misch- und
-          Laubwaldbestände.
+          Page5-P1: Mit dem Anspruch der langjährigen C-Bindung und einer
+          Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen
+          Produkten, insbesondere im Holzbau angestrebt und die Wiederverwendung
+          und -verwertung nach der Lebensdauer mitgedacht.
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page5-P2: Hierzu erfolgt der Aufbau eines regionalen Waldreallabors
-          mit verschiedenen Strukturen und Altersgruppen der Kiefernwälder in
-          Brandenburg. Auf der ca. 30 ha großen Kernfläche des Waldreallabors in
-          der Schorfheide (Nordostbrandenburg) werden anhand real umgesetzter
-          sowie simulierter Behandlungsvarianten (Variationen in
-          Eingriffsstärke, -turnus, räumlichem Strukturdesign,
-          Verjüngungssteuerung etc.) die Effekte unterschiedlicher, zuvor
-          definierter und simulierter Managementszenarien auf die
-          Bestandesvitalität und –produktivität, auf Holzernteverfahren
-          (Schnittstelle Modul B) sowie auf Holzqualität und -quantität
-          (Schnittstelle Modul C) und auf zukünftig relevante
-          Waldökosystemleistungen in der Region Brandenburg-Berlin analysiert.
-        </Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-          <CardMedia
-            component="img"
-            src={image5}
-            alt="image5"
-            sx={{
-              height: { xs: "200px", md: "400px" },
-              width: "full",
-              borderRadius: 0,
-            }}
-          />
-        </Box>
-        <Typography
-          variant="body2"
-          sx={{ textAlign: { md: "justify" }, mb: 1 }}
-        >
-          Page5-P3: Die auf der Kernfläche des Waldreallabors implementierten
-          Managementszenarien bzw. die enthaltenen waldbaulichen Strategien
-          werden durch kommunale und private Partnerbetriebe wiederholt, in
-          ihrer Praxistauglichkeit analysiert und mit den Ergebnissen aus der
-          Kernfläche verglichen und bewertet. Das Zusammenspiel der Kernfläche
-          des Projektes mit den Satellitenflächen der Partnerbetriebe stellt das
-          Waldreallabor als Ganzes dar. Zusätzlich werden im sogenannten
-          „Praxisnetzwerk“, das über Dachverbände und Netzwerke eine größere
-          Zahl von Stakeholdern im Bereich Wald und Forst erreicht,
-          Waldbesitzende in geringerer Intensität und Frequenz am Projekt
-          beteiligt.
+          Page5-P2: Wesentliche Einflussfaktoren auf physikalische Eigenschaften
+          sind die Holzart sowie Standort- und Klimafaktoren während des
+          Baumwachstums. An Bäumen des Waldreallabors sollen insbesondere
+          Astigkeit, Faserverläufe, Dichten, Jahrringbreiten, Früh-, Spät- und
+          Druckholzanteile sowie Zellulosefibrillenwinkel untersucht werden, die
+          für die Mechanik, aber auch für das Quell- und Schwindverhalten eine
+          zentrale Rolle spielen. Dabei werden die Einflüsse der jeweiligen
+          Umweltbedingungen im Waldreallabor sowie des Standortes und der
+          Wuchsform erfasst und mit den gewonnenen Kennwerten in Bezug gesetzt
+          werden (
+          <Link to="/pagefive" style={{ color: "#4169E1" }}>
+            Schnittstelle Modul A{" "}
+          </Link>
+          und{" "}
+          <Link to="/pagesix" style={{ color: "#4169E1" }}>
+            Modul B
+          </Link>
+          ).
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page5-P4: Die Daten der Messungen des Bestandesklimas, der
-          Bodenfeuchte und -temperatur, Ansprachen der Zersetzung der Streu, der
-          Totholz- und Vegetationsaufnahmen sowie der Verjüngung werden
-          ausgewertet. Diese Erhebungen lassen Auswirkung der
-          Nutzungsintensitäten auf Klima, Biodiversität und Wasserbereitstellung
-          zu und werden mit Wiederholungsaufnahmen am Boden und der
-          Zeitreihenanalysen aus Fernerkundungsdaten kombiniert. Zusätzlich
-          werden die erhobenen Daten in das Waldwachstumsmodell BWINPro
-          eingebunden um dieses weiterzuentwickeln.
+          Page5-P3: Basierend auf der Materialanalyse des ganzen Baumes werden
+          neben den hochwertigen Segmenten für den Holzbau auch innovative
+          Produkte aus Restholz und Rinde entwickelt: im Rahmen von
+          Studierenden- und Promotionsprojekten werden experimentelle
+          architektonische Anwendungsmöglichkeiten für das Material des gesamten
+          Baumes untersucht und ggf. mit materialwissenschaftlichen Methoden
+          ergänzt.
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page5-P5: Die unterschiedlichen Waldbestände im Reallabor werden mit
-          einem tragbaren SLAM-LiDAR-Scanner (PLS) vom Boden und mit einem
-          RTK-UAV aus der Luft digital erfasst und diese digitalen
-          Vollinventurdaten den weiteren Arbeitspaketen im Projekt zur Verfügung
-          gestellt. Dabei liefert der PLS hochaufgelöste (~1cm) Punkte-wolken
-          des Stammbereichs, der Bodenvegetation und der unteren Krone. Die
-          Punktewolken der UAV-Aufnahmen komplettieren den oberen Kronenbereich
-          und dienen zur Georeferenzierung der gesamten 3D Punktewolke. Durch
-          Wiederholungs-aufnahmen nach den durchgeführten
-          Bewirtschaftungsmaßnahmen werden die Punktewolken um eine temporale
-          Dimension erweitert (4D-Punktewolken). Diese ermöglichen die Analyse
-          und Visualisierung von Zuwachs und Kronendynamiken, sowie
-          Verjüngungsmonitoring innerhalb der 4D Punktewolken anhand noch zu
-          entwickelnder digitaler Algorithmik.
+          Page5-P4: Basierend auf der Materialanalyse des ganzen Baumes werden
+          neben den hochwertigen Segmenten für den Holzbau auch innovative
+          Produkte aus Restholz und Rinde entwickelt: im Rahmen von
+          Studierenden- und Promotionsprojekten werden experimentelle
+          architektonische Anwendungsmöglichkeiten für das Material des gesamten
+          Baumes untersucht und ggf. mit materialwissenschaftlichen Methoden
+          ergänzt.
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ textAlign: { md: "justify" }, mb: 1 }}
+        >
+          Page5-P5: Um zu einer effizienteren Nutzung des Rohstoffes Kiefer zu
+          gelangen, ist es notwendig, dass die Kiefer in ihren
+          Festigkeitseigenschaften, die von den Wuchsmerkmalen abhängen,
+          untersucht (standortabhängig) und beschrieben wird. Unter Einbeziehung
+          der Strukturanalytik werden praktikable Methoden zur
+          Festigkeitssortierung der Kiefer entwickelt. Zusätzlich gilt es in
+          diesem Projekt, die Holzbauinitiative Berlin/Brandenburg über den
+          Projektergebnissen zu informieren, um die jeweiligen Protagonisten zu
+          erreichen. Zusammen mit der Holzbauinitiative und den anderen
+          Protagonisten des Projektes werden entsprechende Schulungsmaßnahmen
+          für Architektinnen und Architekten sowie Planerinnen und Planer
+          entwickelt und in entsprechenden Veranstaltungen der interessierten
+          Öffentlichkeit bekannt gegeben.
         </Typography>
       </Box>
       <Footer />

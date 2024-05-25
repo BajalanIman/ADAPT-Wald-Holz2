@@ -134,52 +134,54 @@ const NavigationDrawers = () => {
             <ListItemText primary="N1: Adapt-wald-holz" />
           </ListItem> */}
           <Divider />
-          <Link to="pageone">
+          <Link to="/pageone">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="N2:Adaptives Waldressourcen-Management für eine zukunftsfähige Holzwirtschaft in der Region Brandenburg-Berlin" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="pagetwo">
+          <Link to="/pagetwo">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="N3: Die Module" />
             </ListItem>
           </Link>
           <List sx={{ pl: 4 }}>
-            <Link to="pagefive">
+            <Link to="/pagethree">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
                 <ListItemText primary="N3.1: Waldmanagement" />
               </ListItem>
             </Link>
-            <Link to="pagesix">
+            <Link to="/pagefour">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
                 <ListItemText primary="N3.2: Holzbereitstellung" />
               </ListItem>
             </Link>
-            <Link to="pageseven">
+            <Link to="/pagefive">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
                 <ListItemText primary="N3.3: Holzverwendung" />
               </ListItem>
             </Link>
           </List>
           <Divider />
-          <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-            <ListItemText primary="N4: InnoForum Wald und Holz" />
-          </ListItem>
+          <Link to="/pagesix">
+            <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+              <ListItemText primary="N4: InnoForum Wald und Holz" />
+            </ListItem>
+          </Link>
           <Divider />
-          <Link to="pageeight">
+          <Link to="/pageseven">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="N5: Projektkonsortium" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="pagefour">
+          <Link to="/pageeight">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="N6: REGULUS" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="imprint">
+          <Link to="/imprint">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="Impressum" />
             </ListItem>

@@ -1,19 +1,16 @@
 import React from "react";
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
-import image4 from "./../../assets/page4.jpg";
+import image7 from "./../../assets/page7.jpg";
+
 import Footer from "./Footer";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 import TopLogo from "./TopLogo";
 
-import { Link, useLocation } from "react-router-dom";
-import { Box, Typography, Grid, CardMedia } from "@mui/material";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import { Link } from "react-router-dom";
+import { Box, CardMedia, Typography } from "@mui/material";
 
 const PageFour = () => {
-  const location = useLocation();
-  const { state } = location;
-
   return (
-    <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
       {/* <TopLogo /> */}
       <Typography
@@ -25,90 +22,71 @@ const PageFour = () => {
           textAlign: { xs: "center", md: "start" },
         }}
       >
-        Page4-title: REGULUS
+        Page4: Holzernte-, Holzlogistik- und Datenaustauschkonzepte für die
+        Holzbereitstellungskette
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
         <CardMedia
           component="img"
-          src={image4}
-          alt="image4"
+          src={image7}
+          alt="image6"
           sx={{
-            maxHeight: { xs: "35vh", md: "35vh", lg: "35vh" },
-            width: "100%",
-            objectFit: "contain",
+            height: { xs: "200px", md: "400px" },
+            width: { xs: "full", md: "full" },
+            borderRadius: 0,
           }}
         />
       </Box>
-      <Box sx={{ my: 4 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page4-P1: Wälder leisten Herausragendes für unsere Lebensgrundlagen.
-          Sie schützen Klima, Wasser und Biodiversität. Sie bieten Erholungsraum
-          und liefern mit dem Rohstoff Holz eine Ressource mit zentraler
-          Bedeutung für die Wirtschaft. Die aktuellen Herausforderungen für die
-          Wälder durch Stürme, Trockenheit und Schädlinge sind mit wachsenden
-          und immer vielfältigeren Ansprüchen der Gesellschaft verbunden. In der
-          Folge stehen das Waldmanagement und die Holzwirtschaft vor drängenden
-          Fragen, die nicht mehr durch sektorale Forschungsansätze bearbeitet
-          werden können.
+          Page4-P1: Kernstück der Bemühungen zur Optimierung der
+          Rohstoffversorgung und des zugehörigen Datenaustauschs sowie zur
+          Erhöhung von Transparenz und Vertrauen zwischen der Wald- und der
+          Holzwirtschaft ist der Entwurf einer geeigneten interoperablen
+          (Infra-)Struktur für Datenaustausch und Datenanalyse (i.W. Plattform).
+          Als Bindeglied zwischen dem Waldmanagement (
+          <Link to="/pagethree" style={{ color: "#4169E1" }}>
+            Schnittstelle Modul A
+          </Link>
+          ) und der Holzverwendung (
+          <Link to="/pagefive" style={{ color: "#4169E1" }}>
+            Schnittstelle Modul C
+          </Link>
+          ) sollen relevante Daten aller Akteure gleichermaßen erfasst werden.
+          Neben generierten Daten aus der Holzernte und -logistik (z. B.
+          Holzvermessung) verbindet die Plattform insbesondere Daten aus dem
+          digitalen Waldmonitoring und der Waldbewirtschaftung (
+          <Link to="/pagethree" style={{ color: "#4169E1" }}>
+            Schnittstelle Modul A
+          </Link>
+          ) sowie der Materialcharakterisierung (
+          <Link to="/pagefive" style={{ color: "#4169E1" }}>
+            Schnittstelle Modul C
+          </Link>
+          ).
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page4-P2: Daher besteht das zentrale Anliegen der
-          <a
-            target="_blank"
-            className="pointer text-blue-500 px-2"
-            href="https://regulus-waldholz.de/ "
-          >
-            REGULUS -Forschung
-          </a>
-          darin, inter- und transdisziplinäre Forschung zu stärken und die
-          Forschungslandschaft Wald und Holz aktiv zu gestalten, um
-          zukunftsweisende Strategien für eine klimaschützende Wald- und
-          Holzwirtschaft zu entwickeln. Derzeit wird in Deutschland in zehn
-          regionalen
-          <a
-            target="_blank"
-            className="pointer text-blue-500 px-2"
-            href="https://regulus-waldholz.de/innovationsgruppen/ "
-          >
-            REGULUS-Innovationsgruppen
-          </a>
-          an konkreten Lösungskonzepten für eine nachhaltige und klimaschützende
-          Wald- und Holzwirtschaft geforscht. Dabei werden klimaangepasste
-          Wald-Holz-Managementsysteme und die Entwicklung multifunktionaler
-          Wälder auf Schadflächen, Möglichkeiten zum Erhalt von
-          Ökosystemleistungen unter Trockenstress und die stoffliche
-          Altholznutzung erforscht. Darüber hinaus werden digitale Instrumente
-          entwickelt, um die Dynamiken von Waldökosystemen zu verstehen..
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{ textAlign: { md: "justify" }, mb: 1 }}
-        >
-          Page4-P3: Derzeit wird in zehn regionalen REGULUS-Innovationsgruppen
-          in ganz Deutschland inter- und transdisziplinär geforscht. Die
-          unterschiedlichen REGULUS-Innovationsgruppen, zusammengesetzt aus
-          verschiedenen Institutionen und Praxispartnern haben die Umsetzbarkeit
-          und potenzielle Wirkung ihrer Arbeiten und Ergebnisse im Fokus. Die
-          gezielte Förderung von Innovationsprozessen ist ein Merkmal, das durch
-          die Vernetzung maßgeblich unterstützt wird. Auf der
-          <a
-            target="_blank"
-            className="pointer text-blue-500 px-2"
-            href="https://regulus-waldholz.de/innovationsgruppen/#standortkarte "
-          >
-            REGULUS-Standortkarte
-          </a>
-          sind alle Gruppen und die jeweiligen Beteiligungen aufgeführt..
+          Page4-P2: Es werden relevante Elemente der Holzbereitstellungskette
+          detailliert untersucht und optimiert. So sollen die
+          Einsatzmöglichkeiten von teilmechanisierten Holzernteverfahren unter
+          wissenschaftlicher Begleitung tiefgehend untersucht und beispielhaft
+          umgesetzt werden. Unter Zugrundelegung des Waldreallabor-Ansatzes
+          werden auf dieser Basis in Abstimmung und unter maßgeblicher
+          Beteiligung der Praxispartner des Projekts Holzernteansätze entwickelt
+          und neue Einsatzbereiche in die Praxis umgesetzt. Diese Konzepte
+          werden im praktischen Forstbetrieb umgesetzt und wissenschaftlich
+          mittels Zeitstudien, ökonomischen Begleituntersuchungen und
+          ergonomische Untersuchungen ganzheitlich analysiert.
         </Typography>
       </Box>
       <Footer />
-    </Box>
+    </div>
   );
 };
 

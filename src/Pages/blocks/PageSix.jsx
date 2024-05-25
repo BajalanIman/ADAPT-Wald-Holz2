@@ -1,87 +1,88 @@
 import React from "react";
-import image6 from "./../../assets/page6.png";
-import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
-import TopLogo from "./TopLogo";
-
 import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
+
+import image3 from "./../../assets/page3.jpg";
+import Footer from "./Footer";
+import TopLogo from "./TopLogo";
+import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const PageSix = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
       {/* <TopLogo /> */}
-      <Typography
-        variant="h5"
+      <Box>
+        <Typography
+          variant="h5"
+          sx={{
+            my: { xs: 4, md: 8 },
+            fontWeight: "bold",
+            color: "#2b2b2b",
+            textAlign: { xs: "center", md: "start" },
+          }}
+        >
+          Page6-title: InnoFoum Wald und Holz
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            marginY: 4,
+          }}
+        >
+          <CardMedia
+            component="img"
+            src={image3}
+            alt="example1"
+            sx={{
+              height: { xs: "200px", md: "400px" },
+              width: "full",
+              borderRadius: 0,
+            }}
+          />
+          <span className="text-end pr-6 italic pt-1 text-[9px] font-[#716653]">
+            ©HNEE, Ulrich Wessollek
+          </span>
+        </Box>
+      </Box>
+      <Box
         sx={{
-          my: { xs: 4, md: 8 },
-          fontWeight: "bold",
-          color: "#2b2b2b",
-          textAlign: { xs: "center", md: "start" },
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          my: 4,
         }}
       >
-        Page6: Holzernte-, Holzlogistik- und Datenaustauschkonzepte für die
-        Holzbereitstellungskette
-      </Typography>
-      <Box sx={{ display: "flex", justifyContent: "center", my: 4 }}>
-        <CardMedia
-          component="img"
-          src={image6}
-          alt="image6"
-          sx={{
-            height: { xs: "200px", md: "400px" },
-            width: { xs: "full", md: "50%" },
-            borderRadius: 0,
-          }}
-        />
-      </Box>
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 2, my: 4 }}>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page6-P1: Kernstück der Bemühungen zur Optimierung der
-          Rohstoffversorgung und des zugehörigen Datenaustauschs sowie zur
-          Erhöhung von Transparenz und Vertrauen zwischen der Wald- und der
-          Holzwirtschaft ist der Entwurf einer geeigneten interoperablen
-          (Infra-)Struktur für Datenaustausch und Datenanalyse (i.W. Plattform).
-          Als Bindeglied zwischen dem Waldmanagement (
-          <Link to="/pagefive" style={{ color: "#4169E1" }}>
-            Schnittstelle Modul A
-          </Link>
-          ) und der Holzverwendung (
-          <Link to="/pageseven" style={{ color: "#4169E1" }}>
-            Schnittstelle Modul C
-          </Link>
-          ) sollen relevante Daten aller Akteure gleichermaßen erfasst werden.
-          Neben generierten Daten aus der Holzernte und -logistik (z. B.
-          Holzvermessung) verbindet die Plattform insbesondere Daten aus dem
-          digitalen Waldmonitoring und der Waldbewirtschaftung (
-          <Link to="/pagefive" style={{ color: "#4169E1" }}>
-            Schnittstelle Modul A
-          </Link>
-          ) sowie der Materialcharakterisierung (
-          <Link to="/pageseven" style={{ color: "#4169E1" }}>
-            Schnittstelle Modul C
-          </Link>
-          ).
+          Page6-P1: Das regionale Forschungscluster Wald-Holz am Standort
+          Eberswalde liefert durch seine Vernetzung mit Schlüsselakteuren der
+          brandenburgischen Wald- und Holzwirtschaft die Basis für erfolgreichen
+          Wissenstransfer und damit für eine Transformation der Wald- und
+          Holzwirtschaft.
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Page6-P2: Es werden relevante Elemente der Holzbereitstellungskette
-          detailliert untersucht und optimiert. So sollen die
-          Einsatzmöglichkeiten von teilmechanisierten Holzernteverfahren unter
-          wissenschaftlicher Begleitung tiefgehend untersucht und beispielhaft
-          umgesetzt werden. Unter Zugrundelegung des Waldreallabor-Ansatzes
-          werden auf dieser Basis in Abstimmung und unter maßgeblicher
-          Beteiligung der Praxispartner des Projekts Holzernteansätze entwickelt
-          und neue Einsatzbereiche in die Praxis umgesetzt. Diese Konzepte
-          werden im praktischen Forstbetrieb umgesetzt und wissenschaftlich
-          mittels Zeitstudien, ökonomischen Begleituntersuchungen und
-          ergonomische Untersuchungen ganzheitlich analysiert.
+          Page6-P2: Mit dem Aufbau eines Innovationsforums (InnoForum Wald und
+          Holz), in dem forst- und holzwirtschaftliche mit nicht-forstlichen
+          Akteuren zusammenarbeiten, wird eine transfer-freundliche Umgebung
+          langfristig in der Region etabliert. Dabei werden Rahmenbedingungen
+          für eine übertragbare, kohärente Strategie zur Lenkung der Stoffströme
+          von Holz entwickelt. Zielgröße ist der größtmögliche
+          volkswirtschaftliche und ökologische Nutzen, vor allem für die in den
+          nächsten zwei bis drei Jahrzehnten in Brandenburg weiterhin
+          dominierende Waldkiefer. Im InnoForum Wald und Holz werden die
+          gewonnenen Erkenntnisse mit Akteuren der Wald- und Holzwirtschaft
+          sowie weiteren Interessensgruppen diskutiert, während gleichzeitig
+          Forschungs- und Diskussionsbedarfe der Praxisakteure in das Vorhaben
+          transdisziplinär zurückgeführt und dort integriert und bearbeitet
+          werden..
         </Typography>
       </Box>
       <Footer />
