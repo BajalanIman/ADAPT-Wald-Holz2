@@ -7,7 +7,7 @@ import SidbarMobileHandler from "../SidbarMobileHandler";
 
 const Imprint = () => {
   return (
-    <div className=" w-full ml-24 pr-24 mb-8">
+    <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
 
       {/* <TopLogo /> */}
