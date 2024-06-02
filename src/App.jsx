@@ -1,19 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Box } from "@mui/material";
 
-import Blocks from "./Pages/blocks/Blocks";
-import Root from "./Pages/Root";
-import Projektidee from "./Pages/blocks/Projektidee";
-import Module from "./Pages/blocks/Module";
-import Waldmanagement from "./Pages/blocks/Waldmanagement";
-import Holzbereitstellung from "./Pages/blocks/Holzbereitstellung";
-import Holzverwendung from "./Pages/blocks/Holzverwendung";
-import InnoForum from "./Pages/blocks/InnoForum";
-import Projektkonsortium from "./Pages/blocks/Projektkonsortium";
-import Regulus from "./Pages/blocks/Regulus";
-import Imprint from "./Pages/blocks/Imprint";
-import PopupPoll from "./Pages/blocks/PopupPoll";
-import Team from "./Pages/Team/Team";
+import Blocks from "./Components/blocks/Blocks";
+import Root from "./Root";
+import Projektidee from "./Components/Pages/Projektidee";
+import Module from "./Components/Pages/Module/Module";
+import Waldmanagement from "./Components/Pages/Waldmanagement";
+import Holzbereitstellung from "./Components/Pages/Holzbereitstellung";
+import Holzverwendung from "./Components/Pages/Holzverwendung";
+import InnoForum from "./Components/Pages/InnoForum";
+import Projektkonsortium from "./Components/Pages/Projektkonsortium";
+import Regulus from "./Components/Pages/Regulus";
+import Imprint from "./Components/Pages/Imprint/Imprint";
+import PopupPoll from "./Components/blocks/PopupPoll";
+import Team from "./Components/Pages/Team/Team";
 
 const router = createBrowserRouter([
   {

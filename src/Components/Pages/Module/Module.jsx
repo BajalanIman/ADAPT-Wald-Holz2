@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography } from "@mui/material";
 
-import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import Footer from "../Footer";
+import SidbarMobileHandler from "../Sidbar/SidbarMobileHandler";
 import ImageViewerCustom from "./ImageViewerCustom";
 
-import image2 from "./../../assets/page2-1.png";
+import image2 from "./../../../assets/page2-1.png";
 
 const Module = () => {
   return (

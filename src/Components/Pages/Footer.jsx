@@ -122,7 +122,7 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={4} md={3}>
+        <Grid item xs={6} sm={4} md={3}>
           <Box sx={{ textAlign: "center" }}>
             <img
               src={bmfFONA}
@@ -135,7 +135,7 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
+        <Grid item xs={4} sm={4} md={2}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
               src={regulus}

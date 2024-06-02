@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography, Box, Link } from "@mui/material";
 
-import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
-import Datenschutz from "../Datenschutz";
+import Footer from "../../../Components/Pages/Footer";
+import SidbarMobileHandler from "../../Pages/Sidbar/SidbarMobileHandler";
+import Datenschutz from "./Datenschutz";
 
 const Imprint = () => {
   return (

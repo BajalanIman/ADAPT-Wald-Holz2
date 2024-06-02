@@ -2,7 +2,7 @@ import React from "react";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image3 from "./../../assets/page3.jpg";
 

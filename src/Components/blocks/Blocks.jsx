@@ -1,26 +1,12 @@
 import React from "react";
-import { Box, IconButton } from "@mui/material";
-import FullscreenIcon from "@mui/icons-material/Fullscreen";
+import { Box } from "@mui/material";
 
-import Footer from "./Footer";
+import Footer from "./../Pages/Footer";
 import BodyBlock from "./BodyBlock";
 import CostumData from "./CostumData";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import SidbarMobileHandler from "./../Pages/Sidbar/SidbarMobileHandler";
 
 const Blocks = () => {
-  const toggleFullscreen = () => {
-    const iframe = document.getElementById("iframe");
-    if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-    } else if (iframe.mozRequestFullScreen) {
-      iframe.mozRequestFullScreen();
-    } else if (iframe.webkitRequestFullscreen) {
-      iframe.webkitRequestFullscreen();
-    } else if (iframe.msRequestFullscreen) {
-      iframe.msRequestFullscreen();
-    }
-  };
-
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8 sm:px-4 md:px-0 flex flex-col items-center">
       <Box sx={{ width: "90%" }}>
@@ -41,28 +27,14 @@ const Blocks = () => {
             <iframe
               id="iframe"
               src="https://vr-easy.com/27323/"
+              allow="xr-spatial-tracking"
               allowFullScreen
               frameBorder="0"
-              className="sm:h-[200px] md:h-[350px] w-[100%]"
-            />
-            <IconButton
-              onClick={toggleFullscreen}
-              sx={{
-                position: "absolute",
-                top: "10px",
-                left: "10px",
-                backgroundColor: "rgba(255, 255, 255, 0.7)",
-                "&:hover": {
-                  backgroundColor: "rgba(255, 255, 255, 0.9)",
-                },
-              }}
-            >
-              <FullscreenIcon />
-            </IconButton>
+              className="h-[200px] md:h-[200px] lg:h-[350px] w-[100%]"
+            ></iframe>
           </Box>
         </Box>
       </div>
-      {/* <BlockOne /> */}
       <Box
         sx={{
           display: { xs: "flex", lg: "grid" },

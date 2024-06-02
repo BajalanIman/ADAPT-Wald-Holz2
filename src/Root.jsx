@@ -1,8 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import NavigationDrawers from "./NavigationDrawers";
-import SidebarMobile from "./SidebarMobile";
+import NavigationDrawers from "./Components/Pages/Sidbar/NavigationDrawers";
 
 const Root = () => {
   return (

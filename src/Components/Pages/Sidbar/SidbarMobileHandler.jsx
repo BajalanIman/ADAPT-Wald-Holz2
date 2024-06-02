@@ -5,7 +5,7 @@ import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 
 import SidebarMobile from "./SidebarMobile";
 
-import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
+import adapt from "./../../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
 const SidbarMobileHandler = () => {
   const [open, setOpen] = useState(false);

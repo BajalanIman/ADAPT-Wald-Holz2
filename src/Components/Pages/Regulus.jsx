@@ -2,9 +2,8 @@ import React from "react";
 import { Box, Typography, CardMedia } from "@mui/material";
 
 import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
-
 import image4 from "./../../assets/page4.jpg";
+import SidbarMobileHandler from "./../Pages/Sidbar/SidbarMobileHandler";
 
 const Regulus = () => {
   return (

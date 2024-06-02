@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import hnee from "./../../assets/hnee.jpg";
 

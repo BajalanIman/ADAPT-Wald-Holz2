@@ -1,10 +1,9 @@
 import React from "react";
 import { Typography, Box, Card, CardContent, CardMedia } from "@mui/material";
-import adapt from "./../../assets/Ramazan.jpg";
-import blankProfile from "./../../assets/blank-profile.png";
+import adapt from "./../../../assets/Ramazan.jpg";
+import blankProfile from "./../../../assets/blank-profile.png";
 
 const TeamDetails = ({ image, name, address, phone, email, page }) => {
-  console.log(name);
   return (
     <Box
       sx={{
@@ -12,6 +11,7 @@ const TeamDetails = ({ image, name, address, phone, email, page }) => {
         flexDirection: "column",
         mt: 3,
         gap: 2,
+        width: "100%",
       }}
     >
       <Card

@@ -1,9 +1,10 @@
 import React from "react";
-import Footer from "./../../Pages/blocks/Footer";
+import { Box, Typography } from "@mui/material";
+
+import Footer from "./../../Pages/Footer";
 import TeamData from "./TeamData";
 import TeamDetails from "./TeamDetails";
-import SidbarMobileHandler from "../SidbarMobileHandler";
-import { Box, Typography } from "@mui/material";
+import SidbarMobileHandler from "../../Pages/Sidbar/SidbarMobileHandler";
 
 const Team = () => {
   return (
@@ -63,11 +64,32 @@ const Team = () => {
         })}
       </Box>
       <Typography variant="h5" sx={{ fontWeight: "bold", mt: 8, mb: 2 }}>
-        Teilprojektleitung
+        Gesamtprojektleitung
       </Typography>
       <Box>
         {TeamData.map((e) => {
           if (e.id === 3) {
+            return e.people.map((j) => (
+              <TeamDetails
+                image={j.image}
+                key={j.id}
+                name={j.name}
+                address={j.address}
+                phone={j.phone}
+                email={j.email}
+                page={j.page}
+              />
+            ));
+          }
+          return null;
+        })}
+      </Box>
+      <Typography variant="h5" sx={{ fontWeight: "bold", mt: 8, mb: 2 }}>
+        Teilprojektleitung
+      </Typography>
+      <Box>
+        {TeamData.map((e) => {
+          if (e.id === 4) {
             return e.people.map((j) => (
               <TeamDetails
                 image={j.image}

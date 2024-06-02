@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 import Footer from "./Footer";
-import SidbarMobileHandler from "../SidbarMobileHandler";
+import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image8 from "./../../assets/page8.jpg";
 
@@ -61,7 +61,7 @@ const Holzverwendung = () => {
           Umweltbedingungen im Waldreallabor sowie des Standortes und der
           Wuchsform erfasst und mit den gewonnenen Kennwerten in Bezug gesetzt
           werden (
-          <Link to="/holzverwendung" style={{ color: "#4169E1" }}>
+          <Link to="/waldmanagement" style={{ color: "#4169E1" }}>
             Schnittstelle Modul A{" "}
           </Link>
           und{" "}

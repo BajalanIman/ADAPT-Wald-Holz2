@@ -1,4 +1,4 @@
-import image1 from "./../../assets/page1.jpg";
+import image1 from "./../../../assets/page1.jpg";
 
 const TeamData = [
   {
@@ -93,8 +93,25 @@ const TeamData = [
       },
     ],
   },
+
   {
     id: 3,
+    position: "Gesamtprojektleitung",
+    people: [
+      {
+        id: 1,
+        name: "Prof. Dr. Tobias Cremer",
+        address: "Hochschule für nachhaltige Entwicklung Eberswalde",
+        phone: "+49 -(0)3334 657 166",
+        email: "Tobias.Cremer@hnee.de",
+        image:
+          "https://www.hnee.de/_obj/FF4FD9D7-21A8-4EE2-8926-0F0385044EA3/inline/size/195x/Tobias_Cremer_125x150.jpg",
+        page: "https://www.hnee.de/de/Fachbereiche/Wald-und-Umwelt/Professorinnen-und-Professoren/Tobias-Cremer/Prof.-Dr.-Tobias-Cremer-E6856.htm",
+      },
+    ],
+  },
+  {
+    id: 4,
     position: "Teilprojektleitung",
     people: [
       {
