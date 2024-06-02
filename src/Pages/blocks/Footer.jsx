@@ -1,5 +1,6 @@
-import { Box, Divider, Grid } from "@mui/material";
 import React from "react";
+import { Box, Divider, Grid } from "@mui/material";
+
 import bmbfGefördert from "./../../assets/BMBF_gefördert_deutsch.jpg";
 import bmfFONA from "./../../assets/BMBF_FONA_Logo_4c.jpg";
 import zalf from "./../../assets/logo-zalf-deutsch.jpg";
@@ -32,7 +33,7 @@ const Footer = () => {
               alt="hnee"
               style={{
                 width: "180px",
-                height: { sm: "140px", md: "140px" },
+                height: { sm: "140px", md: "120px" },
                 objectFit: "contain",
               }}
             />
@@ -56,14 +57,19 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Grid item xs={6} sm={4} md={3}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "start",
+            }}
+          >
             <img
-              src={regulus}
-              alt="regulus"
+              src={mpl}
+              alt="mpl"
               style={{
-                width: "170px",
-                height: { sm: "100px", md: "150px" },
+                width: "300px",
+                height: { sm: "100px", md: "140px" },
                 objectFit: "contain",
               }}
             />
@@ -82,11 +88,11 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ textAlign: "center" }}>
+        <Grid item xs={6} sm={4} md={2}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
-              src={bmfFONA}
-              alt="FONA"
+              src={thuenen}
+              alt="thuenen"
               style={{
                 width: "180px",
                 height: { sm: "100px", md: "140px" },
@@ -116,11 +122,11 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={2}>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Grid item xs={12} sm={4} md={3}>
+          <Box sx={{ textAlign: "center" }}>
             <img
-              src={thuenen}
-              alt="thuenen"
+              src={bmfFONA}
+              alt="FONA"
               style={{
                 width: "180px",
                 height: { sm: "100px", md: "140px" },
@@ -129,19 +135,14 @@ const Footer = () => {
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={3}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "start",
-            }}
-          >
+        <Grid item xs={6} sm={4} md={2}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <img
-              src={mpl}
-              alt="mpl"
+              src={regulus}
+              alt="regulus"
               style={{
-                width: "300px",
-                height: { sm: "100px", md: "140px" },
+                width: "170px",
+                height: { sm: "100px", md: "150px" },
                 objectFit: "contain",
               }}
             />

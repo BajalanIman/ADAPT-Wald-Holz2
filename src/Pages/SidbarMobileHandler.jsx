@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
-import DensityMediumIcon from "@mui/icons-material/DensityMedium";
-import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
-import SidebarMobile from "./SidebarMobile";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Box, Button } from "@mui/material";
+import DensityMediumIcon from "@mui/icons-material/DensityMedium";
+
+import SidebarMobile from "./SidebarMobile";
+
+import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
 const SidbarMobileHandler = () => {
   const [open, setOpen] = useState(false);

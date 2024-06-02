@@ -8,11 +8,12 @@ import {
   ListItemText,
 } from "@mui/material";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
-import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 import { Link } from "react-router-dom";
 
+import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
+
 const NavigationDrawers = () => {
-  const [sideBarSize, setSideBarSize] = useState(true); // State to track sidebar size
+  const [sideBarSize, setSideBarSize] = useState(true);
 
   const toggleSidebarSize = () => {
     setSideBarSize(!sideBarSize);
@@ -38,7 +39,6 @@ const NavigationDrawers = () => {
           >
             <Link to="/">
               <img
-                // onClick={toggleSidebarSize}
                 src={adapt}
                 alt="Logo"
                 style={{
@@ -66,30 +66,16 @@ const NavigationDrawers = () => {
               <DensityMediumIcon fontSize="large" />
             </Button>
           </Box>
-          // <Button
-          //   onClick={toggleSidebarSize}
-          //   sx={{
-          //     color: "green",
-          //     backgroundColor: "none",
-          //     "&:hover": {
-          //       color: "#4169E1",
-          //       backgroundColor: "none",
-          //     },
-          //   }}
-          // >
-          //   <DensityMediumIcon fontSize="large" />
-          // </Button>
         )}
       </Box>
-      {/* Sidebar */}
       <Box
         sx={{
-          width: sideBarSize ? "380px" : "0", // Adjust sidebar width based on state
-          overflowX: "hidden", // Hide overflow when sidebar is closed
-          transition: "width 0.5s ease", // Smooth transition for resizing
+          width: sideBarSize ? "380px" : "0",
+          overflowX: "hidden",
+          transition: "width 0.5s ease",
           position: "fixed",
           top: "10px",
-          height: "calc(100% - 20px)", // Take full height of viewport and leave space for the button
+          height: "calc(100% - 20px)",
           bgcolor: "lightgray",
           boxShadow: 3,
           p: 1,
@@ -100,7 +86,6 @@ const NavigationDrawers = () => {
             <ListItem>
               <Link to="/">
                 <img
-                  // onClick={toggleSidebarSize}
                   src={adapt}
                   alt="Logo"
                   style={{
@@ -128,56 +113,66 @@ const NavigationDrawers = () => {
               <DensityMediumIcon fontSize="large" />
             </Button>
           </Box>
-          {/* <Divider />
-
-          <ListItem button>
-            <ListItemText primary="N1: Adapt-wald-holz" />
-          </ListItem> */}
           <Divider />
-          <Link to="/pageone">
+          <Link to="/projektidee">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-              <ListItemText primary="N2:Adaptives Waldressourcen-Management für eine zukunftsfähige Holzwirtschaft in der Region Brandenburg-Berlin" />
+              <ListItemText primary="Die Projektidee" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="/pagetwo">
+          <Link to="/module">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-              <ListItemText primary="N3: Die Module" />
+              <ListItemText primary="Die Module" />
             </ListItem>
           </Link>
           <List sx={{ pl: 4 }}>
-            <Link to="/pagethree">
+            <Link to="/waldmanagement">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N3.1: Waldmanagement" />
+                <ListItemText primary="Waldmanagement" />
               </ListItem>
             </Link>
-            <Link to="/pagefour">
+            <Link to="/holzbereitstellung">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N3.2: Holzbereitstellung" />
+                <ListItemText primary="Holzbereitstellung" />
               </ListItem>
             </Link>
-            <Link to="/pagefive">
+            <Link to="/holzverwendung">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N3.3: Holzverwendung" />
+                <ListItemText primary="Holzverwendung" />
               </ListItem>
             </Link>
           </List>
           <Divider />
-          <Link to="/pagesix">
+          <Link to="/innoForum">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-              <ListItemText primary="N4: InnoForum Wald und Holz" />
+              <ListItemText primary="InnoForum Wald und Holz" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="/pageseven">
+          <a
+            href="https://vr-easy.com/tour/hneeberswalde/240524-adaptwaldholz/"
+            target="blank"
+          >
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-              <ListItemText primary="N5: Projektkonsortium" />
+              <ListItemText primary="360° Virtual Tour" />
+            </ListItem>
+          </a>
+          <Divider />
+          <Link to="/team">
+            <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+              <ListItemText primary="Team" />
             </ListItem>
           </Link>
           <Divider />
-          <Link to="/pageeight">
+          <Link to="/projektkonsortium">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-              <ListItemText primary="N6: REGULUS" />
+              <ListItemText primary="Projektkonsortium" />
+            </ListItem>
+          </Link>
+          <Divider />
+          <Link to="/regulus">
+            <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+              <ListItemText primary="REGULUS" />
             </ListItem>
           </Link>
           <Divider />
@@ -188,7 +183,6 @@ const NavigationDrawers = () => {
           </Link>
         </List>
       </Box>
-      {/* Main Content */}
       <Box
         sx={{
           flexGrow: 1,
@@ -202,206 +196,3 @@ const NavigationDrawers = () => {
 };
 
 export default NavigationDrawers;
-
-// <Box sx={{ display: "flex", overflow: "hidden" }}>
-//   <Box
-//     sx={{
-//       width: "40vh",
-//       marginTop: 1,
-//       marginLeft: 1,
-//       height: "full",
-//       paddingTop: 3,
-//       paddingLeft: 3,
-//       display: "flex",
-//       flexDirection: "column",
-//       transition: "right 0.5s ease",
-//       backgroundColor: "lightgray",
-//     }}
-//   >
-//     <Box
-//       sx={{
-//         borderBottom: "2px dashed gray",
-//         width: 230,
-//         paddingBottom: 1,
-//       }}
-//     >
-//       <Typography
-//         variant="h5"
-//         sx={{
-//           fontWeight: "bold",
-//           paddingBottom: "10px",
-//           fontFamily: "Lilita One",
-//           fontWeight: 400,
-//           fontStyle: "normal",
-//         }}
-//       >
-//         ADAPT-Wald-Holz
-//       </Typography>
-//     </Box>
-//     <Box sx={{ marginY: 3 }}>
-//       <Link to="pageone">
-//         <Typography
-//           variant="p"
-//           sx={{
-//             cursor: "pointer",
-//             fontFamily: "Roboto",
-//             fontWeight: 700,
-//             lineHeight: 2,
-//             "&:hover": { color: "#4169E1" },
-//           }}
-//         >
-//           N2: Adaptives Waldressourcen-Management für eine
-//           zukunftsfähige Holzwirtschaft in der Region Brandenburg-Berlin
-//         </Typography>
-//       </Link>
-//     </Box>
-//     <Divider sx={{ marginRight: "40px" }}></Divider>
-//     <Box
-//       sx={{
-//         marginY: 3,
-//         width: "230px",
-//       }}
-//     >
-//       <Link to="pagetwo">
-//         <Typography
-//           variant="p"
-//           sx={{
-//             fontFamily: "Roboto",
-//             fontWeight: 700,
-//             "&:hover": { color: "#4169E1" },
-//           }}
-//         >
-//           N3: Die Module
-//         </Typography>
-//       </Link>
-//       <Box
-//         sx={{
-//           display: "flex",
-//           flexDirection: "column",
-//           pl: 3,
-//           pt: 2,
-//           // py: 2,
-//           gap: 2,
-//         }}
-//       >
-//         <Link to="pagefive">
-//           <Typography
-//             variant="p"
-//             sx={{
-//               fontFamily: "Roboto",
-//               fontWeight: 500,
-//               "&:hover": {
-//                 color: "#4169E1",
-//               },
-//             }}
-//           >
-//             N3: Die ModuleN3.1.Waldmanagement
-//           </Typography>
-//         </Link>
-//         <Link to="pagesix">
-//           <Typography
-//             variant="p"
-//             sx={{
-//               fontFamily: "Roboto",
-//               fontWeight: 500,
-//               "&:hover": { color: "#4169E1" },
-//             }}
-//           >
-//         N3: Die ModuleN3.1.Waldmanagement N3.2Holzbereitstellung
-//           </Typography>
-//         </Link>
-//         <Link to="pageseven">
-//           <Typography
-//             variant="p"
-//             sx={{
-//               fontFamily: "Roboto",
-//               fontWeight: 500,
-//               "&:hover": { color: "#4169E1" },
-//             }}
-//           >
-//             N3: Die ModuleN3.1.Waldmanagement N3.2Holzbereitstellung N3.3Holzverwendung
-//           </Typography>
-//         </Link>
-//       </Box>
-//     </Box>
-
-//     <Box
-//       sx={{
-//         borderTop: "2px solid #C0C0C0",
-//         marginRight: 6,
-//         paddingY: 2,
-//         // paddingX: 2,
-//       }}
-//     >
-//       <Typography
-//         variant="p"
-//         sx={{
-//           fontFamily: "Roboto",
-//           fontWeight: 700,
-//         }}
-//       >
-//         N4: InnoForum Wald und Holz
-//       </Typography>
-//     </Box>
-//     <Box
-//       sx={{
-//         borderTop: "2px solid #C0C0C0",
-//         paddingY: 2,
-//         marginRight: 6,
-//       }}
-//     >
-//       <Link to="pageeight">
-//         <Typography
-//           variant="p"
-//           sx={{
-//             fontFamily: "Roboto",
-//             fontWeight: 700,
-//             "&:hover": { color: "#4169E1" },
-//           }}
-//         >
-//           N5: Projektkonsortium
-//         </Typography>
-//       </Link>
-//     </Box>
-//     <Box
-//       sx={{
-//         borderTop: "2px solid #C0C0C0",
-//         marginRight: 6,
-//         paddingY: 2,
-//       }}
-//     >
-//       <Link to="pagefour">
-//         <Typography
-//           variant="p"
-//           sx={{
-//             fontFamily: "Roboto",
-//             fontWeight: 700,
-//             "&:hover": { color: "#4169E1" },
-//           }}
-//         >
-//           N6: REGULUS
-//         </Typography>
-//       </Link>
-//     </Box>
-//     <Box
-//       sx={{
-//         borderTop: "2px solid #C0C0C0",
-//         marginRight: 6,
-//         paddingY: 2,
-//       }}
-//     >
-//       <Link to="imprint">
-//         <Typography
-//           variant="p"
-//           sx={{
-//             fontFamily: "Roboto",
-//             fontWeight: 700,
-//             "&:hover": { color: "#4169E1" },
-//           }}
-//         >
-//           Impressum
-//         </Typography>
-//       </Link>
-//     </Box>
-//   </Box>
-// </Box>

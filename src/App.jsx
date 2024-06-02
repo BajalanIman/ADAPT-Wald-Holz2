@@ -1,17 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Box } from "@mui/material";
 
 import Blocks from "./Pages/blocks/Blocks";
 import Root from "./Pages/Root";
-import PageOne from "./Pages/blocks/PageOne";
-import PageTwo from "./Pages/blocks/PageTwo";
-import PageThree from "./Pages/blocks/PageThree";
-import PageFour from "./Pages/blocks/PageFour";
-import PageFive from "./Pages/blocks/PageFive";
-import PageSix from "./Pages/blocks/PageSix";
-import PageSeven from "./Pages/blocks/PageSeven";
-import PageEight from "./Pages/blocks/PageEight";
+import Projektidee from "./Pages/blocks/Projektidee";
+import Module from "./Pages/blocks/Module";
+import Waldmanagement from "./Pages/blocks/Waldmanagement";
+import Holzbereitstellung from "./Pages/blocks/Holzbereitstellung";
+import Holzverwendung from "./Pages/blocks/Holzverwendung";
+import InnoForum from "./Pages/blocks/InnoForum";
+import Projektkonsortium from "./Pages/blocks/Projektkonsortium";
+import Regulus from "./Pages/blocks/Regulus";
 import Imprint from "./Pages/blocks/Imprint";
-import { Box } from "@mui/material";
+import PopupPoll from "./Pages/blocks/PopupPoll";
+import Team from "./Pages/Team/Team";
 
 const router = createBrowserRouter([
   {
@@ -19,15 +21,16 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { path: "/", element: <Blocks /> },
-      { path: "/pageone", element: <PageOne /> },
-      { path: "/pagetwo", element: <PageTwo /> },
-      { path: "/pagethree", element: <PageThree /> },
-      { path: "/pagefour", element: <PageFour /> },
-      { path: "/pagefive", element: <PageFive /> },
-      { path: "/pagesix", element: <PageSix /> },
-      { path: "/pageseven", element: <PageSeven /> },
-      { path: "/pageeight", element: <PageEight /> },
+      { path: "/projektidee", element: <Projektidee /> },
+      { path: "/module", element: <Module /> },
+      { path: "/waldmanagement", element: <Waldmanagement /> },
+      { path: "/holzbereitstellung", element: <Holzbereitstellung /> },
+      { path: "/holzverwendung", element: <Holzverwendung /> },
+      { path: "/innoForum", element: <InnoForum /> },
+      { path: "/projektkonsortium", element: <Projektkonsortium /> },
+      { path: "/regulus", element: <Regulus /> },
       { path: "/imprint", element: <Imprint /> },
+      { path: "/team", element: <Team /> },
     ],
   },
 ]);
@@ -35,6 +38,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <PopupPoll />
       <Box
         sx={{
           display: "flex",
@@ -43,7 +47,6 @@ function App() {
           justifyContent: "center",
           bgcolor: "#ededed",
         }}
-        // className="flex h-full w-full justify-center bg-gray-400"
       >
         <div className="flex h-full max-w-[1920px] bg-white">
           <RouterProvider router={router}></RouterProvider>

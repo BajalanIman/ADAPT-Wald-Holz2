@@ -1,16 +1,14 @@
-import TopLogo from "./TopLogo";
-import Footer from "./Footer";
-
 import React from "react";
 import { Typography, Box, Link } from "@mui/material";
+
+import Footer from "./Footer";
 import SidbarMobileHandler from "../SidbarMobileHandler";
+import Datenschutz from "../Datenschutz";
 
 const Imprint = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
       <SidbarMobileHandler />
-
-      {/* <TopLogo /> */}
       <Box
         sx={{
           display: "flex",
@@ -46,7 +44,7 @@ const Imprint = () => {
               </a>
               Tel.{" "}
               <a style={{ color: "blue" }} href="tel:+497612033681">
-                +49 761 203-3681
+                +49 3334 657-414
               </a>
               <br />
               Kontakt per{" "}
@@ -58,7 +56,7 @@ const Imprint = () => {
               </a>
             </Typography>
             <Typography variant="body1" gutterBottom>
-              Verantwortliche für die Website: Ferréol Berendt
+              Verantwortlicher für die Website: Ferréol Berendt
               <br />
             </Typography>
           </address>
@@ -95,6 +93,7 @@ const Imprint = () => {
           </Typography>
         </Box>
       </Box>
+      <Datenschutz />
       <Footer />
     </div>
   );

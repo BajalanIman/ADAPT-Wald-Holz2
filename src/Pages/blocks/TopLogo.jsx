@@ -1,8 +1,8 @@
-import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
+
+import adapt from "./../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
 const TopLogo = () => {
   return (

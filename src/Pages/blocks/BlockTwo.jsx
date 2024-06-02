@@ -1,10 +1,7 @@
-import { Box, Button, CardMedia, Typography } from "@mui/material";
 import React from "react";
-import example1 from "./../../assets/example1.jpg";
-import { Link, useNavigate } from "react-router-dom";
-
-//
 import { useState, useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Box, Button, CardMedia, Typography } from "@mui/material";
 
 const BlockTwo = ({ data, index }) => {
   const navigate = useNavigate();
@@ -43,18 +40,11 @@ const BlockTwo = ({ data, index }) => {
       },
     });
   };
-  // className={`${
-  //   index % 2 === 0
-  //     ? "h-[750px] px-3 md:pr-6 flex flex-col gap-10 bg-pink-500 md:w-[500px] lg:w-[500px]"
-  //     : "h-[750px] px-3 md:pl-6 flex flex-col gap-10 bg-gray-500 md:w-[500px] lg:w-[500px]"
-  // }`}
   return (
     <Box
-      // ref={boxRef}
       sx={{
         height: "800px",
         width: { xs: "500px" },
-        // bgcolor: "red",
         px: 3,
         display: "flex",
         flexDirection: "column",
@@ -66,7 +56,6 @@ const BlockTwo = ({ data, index }) => {
         sx={{
           height: "45%",
           width: "100%",
-          // bgcolor: "red"
         }}
       >
         <Button onClick={panoClickHandler}>
@@ -94,7 +83,6 @@ const BlockTwo = ({ data, index }) => {
         sx={{
           height: { xs: "40%", lg: "35%", xl: "25%" },
           width: "100%",
-          // bgcolor: "blue",
         }}
       >
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>
@@ -108,7 +96,6 @@ const BlockTwo = ({ data, index }) => {
       <Box
         sx={{
           height: "10%",
-          // bgcolor: "wheat"
         }}
       >
         <Link to={data.navigate}>

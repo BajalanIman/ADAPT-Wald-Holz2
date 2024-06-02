@@ -1,4 +1,3 @@
-// Sidebar.js
 import React from "react";
 
 import {
@@ -6,7 +5,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  Typography,
   Box,
   Toolbar,
 } from "@mui/material";

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import {
-  Alert,
-  AlertTitle,
   Box,
   Button,
   Dialog,
@@ -9,11 +9,8 @@ import {
   List,
   ListItem,
   ListItemText,
-  Typography,
 } from "@mui/material";
-import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import adapt from "./../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
-import { Link, useNavigate } from "react-router-dom";
 import { Close } from "@mui/icons-material";
 
 const SidebarMobile = (props) => {
@@ -74,50 +71,65 @@ const SidebarMobile = (props) => {
         >
           <List sx={{ mt: 0 }}>
             <Divider />
-            <Link to="/pageone">
+            <Link to="/projektidee">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N2:Adaptives Waldressourcen-Management für eine zukunftsfähige Holzwirtschaft in der Region Brandenburg-Berlin" />
+                <ListItemText primary="Adaptives Waldressourcen-Management für eine zukunftsfähige Holzwirtschaft in der Region Brandenburg-Berlin" />
               </ListItem>
             </Link>
             <Divider />
-            <Link to="/pagetwo">
+            <Link to="/module">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N3: Die Module" />
+                <ListItemText primary="Die Module" />
               </ListItem>
             </Link>
             <List sx={{ pl: 4 }}>
-              <Link to="/pagethree">
+              <Link to="/waldmanagement">
                 <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                  <ListItemText primary="N3.1: Waldmanagement" />
+                  <ListItemText primary="Waldmanagement" />
                 </ListItem>
               </Link>
-              <Link to="/pagefour">
+              <Link to="/holzbereitstellung">
                 <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                  <ListItemText primary="N3.2: Holzbereitstellung" />
+                  <ListItemText primary="Holzbereitstellung" />
                 </ListItem>
               </Link>
-              <Link to="/pagefive">
+              <Link to="/holzverwendung">
                 <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                  <ListItemText primary="N3.3: Holzverwendung" />
+                  <ListItemText primary="Holzverwendung" />
                 </ListItem>
               </Link>
             </List>
             <Divider />
-            <Link to="/pagesix">
+            <Link to="/innoForum">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N4: InnoForum Wald und Holz" />
+                <ListItemText primary="InnoForum Wald und Holz" />
               </ListItem>
             </Link>
             <Divider />
-            <Link to="/pageseven">
+            <a
+              href="https://vr-easy.com/tour/hneeberswalde/240524-adaptwaldholz/"
+              target="blank"
+            >
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N5: Projektkonsortium" />
+                <ListItemText primary="360° Virtual Tour" />
+              </ListItem>
+            </a>
+            <Divider />
+            <Link to="/team">
+              <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+                <ListItemText primary="Team" />
               </ListItem>
             </Link>
             <Divider />
-            <Link to="/pageeight">
+            <Link to="/projektkonsortium">
               <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-                <ListItemText primary="N6: REGULUS" />
+                <ListItemText primary="Projektkonsortium" />
+              </ListItem>
+            </Link>
+            <Divider />
+            <Link to="/regulus">
+              <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+                <ListItemText primary="REGULUS" />
               </ListItem>
             </Link>
             <Divider />

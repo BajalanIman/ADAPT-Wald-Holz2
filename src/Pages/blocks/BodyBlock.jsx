@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import React from "react";
 import {
@@ -10,7 +10,7 @@ import {
   Box,
 } from "@mui/material";
 
-const BodyBlock = ({ data, index }) => {
+const BodyBlock = ({ data }) => {
   const navigate = useNavigate();
 
   const panoClickHandler = () => {
