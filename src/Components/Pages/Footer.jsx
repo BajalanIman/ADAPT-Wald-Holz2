@@ -32,8 +32,8 @@ const Footer = () => {
               src={hnee}
               alt="hnee"
               style={{
-                width: "180px",
-                height: { sm: "140px", md: "120px" },
+                // width: "180px",
+                height: { sm: "140px", md: "100px" },
                 objectFit: "contain",
               }}
             />
@@ -50,18 +50,19 @@ const Footer = () => {
               src={lefForst}
               alt="lefForst"
               style={{
-                width: "150px",
-                height: { sm: "100px", md: "150px" },
+                width: "130px",
+                height: { sm: "100px", md: "100px" },
                 objectFit: "contain",
               }}
             />
           </Box>
         </Grid>
-        <Grid item xs={6} sm={4} md={3}>
+        <Grid item xs={6} sm={4} md={2}>
           <Box
             sx={{
               display: "flex",
               alignItems: "start",
+              mt: { md: 3 },
             }}
           >
             <img
@@ -94,7 +95,7 @@ const Footer = () => {
               src={thuenen}
               alt="thuenen"
               style={{
-                width: "180px",
+                // width: "180px",
                 height: { sm: "100px", md: "140px" },
                 objectFit: "contain",
               }}
@@ -141,7 +142,7 @@ const Footer = () => {
               src={regulus}
               alt="regulus"
               style={{
-                width: "170px",
+                // width: "170px",
                 height: { sm: "100px", md: "150px" },
                 objectFit: "contain",
               }}
