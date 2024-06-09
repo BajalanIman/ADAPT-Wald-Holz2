@@ -14,6 +14,7 @@ import Regulus from "./Components/Pages/Regulus";
 import Imprint from "./Components/Pages/Imprint/Imprint";
 import PopupPoll from "./Components/blocks/PopupPoll";
 import Team from "./Components/Pages/Team/Team";
+import Datenschutz from "./Components/Pages/Datenschutz";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "/regulus", element: <Regulus /> },
       { path: "/imprint", element: <Imprint /> },
       { path: "/team", element: <Team /> },
+      { path: "/datenschutz", element: <Datenschutz /> },
     ],
   },
 ]);

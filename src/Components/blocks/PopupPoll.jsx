@@ -14,7 +14,10 @@ const PopupPoll = () => {
   };
   const OpenPpoupHandle = () => {
     setOpen(false);
-    window.open("https://www.google.com", "_blank");
+    window.open(
+      "https://eberswalde.questionpro.eu/a/TakeSurvey?tt=jhEcTexfto0dNLD1VJG%2BfQ%3D%3D&lcfpn=false",
+      "_blank"
+    );
   };
   return (
     <Dialog open={open} onClose={handleClose}>

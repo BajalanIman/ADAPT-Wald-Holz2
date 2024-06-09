@@ -52,7 +52,7 @@ const DetailsSidebar = () => {
         <Divider />
         <Link to="/team">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
-            <ListItemText primary="Team" />
+            <ListItemText primary="Teammitglieder" />
           </ListItem>
         </Link>
         <Divider />
@@ -71,6 +71,12 @@ const DetailsSidebar = () => {
         <Link to="/imprint">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Impressum" />
+          </ListItem>
+        </Link>
+        <Divider />
+        <Link to="/datenschutz">
+          <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
+            <ListItemText primary="Datenschutz" />
           </ListItem>
         </Link>
       </Box>

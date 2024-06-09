@@ -25,11 +25,20 @@ const TeamDetails = ({ image, name, address, phone, email, page }) => {
       >
         <CardMedia
           component="img"
-          sx={{ width: { xs: "100%", sm: 150 }, height: { md: 170 } }}
+          sx={{
+            width: { xs: "100%", sm: 150 },
+            height: { md: 170 },
+          }}
           image={image ? image : blankProfile}
           alt={`${name}'s photo`}
         />
-        <Box sx={{ display: "flex", flexDirection: "column", flex: 1 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flex: 1,
+          }}
+        >
           <CardContent>
             {page && (
               <a href={page} target="_blank" className=" hover:text-blue-700">
@@ -59,13 +68,15 @@ const TeamDetails = ({ image, name, address, phone, email, page }) => {
                 Tel. {phone}
               </Typography>
             )}
-            <Typography
-              variant="subtitle1"
-              color="text.secondary"
-              component="div"
-            >
-              E-mail: {email}
-            </Typography>
+            {email && (
+              <Typography
+                variant="subtitle1"
+                color="text.secondary"
+                component="div"
+              >
+                E-mail: {email}
+              </Typography>
+            )}
           </CardContent>
         </Box>
       </Card>

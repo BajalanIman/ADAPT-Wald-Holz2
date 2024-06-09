@@ -6,6 +6,7 @@ import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image6 from "./../../assets/Ramazan.jpg";
 import image5 from "./../../assets/page5.jpg";
+import { Link } from "react-router-dom";
 
 const Waldmanagement = () => {
   return (
@@ -48,26 +49,31 @@ const Waldmanagement = () => {
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
           Ziel des Moduls ist die Erprobung und Analyse adaptiver
-          Waldmanagement-Verfahren zur Umsetzung des ökologischen Waldumbaus von
-          Kiefernreinbeständen in biodiverse und resiliente Misch- und
-          Laubwaldbestände.
+          Waldmanagement-Verfahren in Brandenburger Kiefernwäldern und deren
+          Effekt auf verschiedene Ökosystemleistungen (besonders im Fokus stehen
+          Produktivität, Kohlenstoffspeicherung und Wasserhaushalt).
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Hierzu erfolgt der Aufbau eines regionalen Waldreallabors mit
-          verschiedenen Strukturen und Altersgruppen der Kiefernwälder in
+          Hierzu erfolgt der Aufbau eines regionalen Waldreallabors in
           Brandenburg. Auf der ca. 30 ha großen Kernfläche des Waldreallabors in
           der Schorfheide (Nordostbrandenburg) werden anhand real umgesetzter
           sowie simulierter Behandlungsvarianten (Variationen in
           Eingriffsstärke, -turnus, räumlichem Strukturdesign,
-          Verjüngungssteuerung etc.) die Effekte unterschiedlicher, zuvor
-          definierter und simulierter Managementszenarien auf die
-          Bestandesvitalität und –produktivität, auf Holzernteverfahren
-          (Schnittstelle Modul B) sowie auf Holzqualität und -quantität
-          (Schnittstelle Modul C) und auf zukünftig relevante
-          Waldökosystemleistungen in der Region Brandenburg-Berlin analysiert.
+          Verjüngungssteuerung etc.) die Effekte unterschiedlicher
+          Managementszenarien auf die Bestandesvitalität, -struktur und
+          –produktivität, auf Holzernteverfahren{" "}
+          <Link to="/holzbereitstellung" style={{ color: "#4169E1" }}>
+            (Schnittstelle Modul B)
+          </Link>{" "}
+          sowie auf Holzqualität und -quantität{" "}
+          <Link to="/holzverwendung" style={{ color: "#4169E1" }}>
+            (Schnittstelle Modul C)
+          </Link>{" "}
+          und auf zukünftig relevante Waldökosystemleistungen in der Region
+          Brandenburg-Berlin analysiert.
         </Typography>
         <Typography
           variant="body2"
@@ -75,28 +81,29 @@ const Waldmanagement = () => {
         >
           Die auf der Kernfläche des Waldreallabors implementierten
           Managementszenarien bzw. die enthaltenen waldbaulichen Strategien
-          werden durch kommunale und private Partnerbetriebe wiederholt, in
-          ihrer Praxistauglichkeit analysiert und mit den Ergebnissen aus der
-          Kernfläche verglichen und bewertet. Das Zusammenspiel der Kernfläche
-          des Projektes mit den Satellitenflächen der Partnerbetriebe stellt das
-          Waldreallabor als Ganzes dar. Zusätzlich werden im sogenannten
-          „Praxisnetzwerk“, das über Dachverbände und Netzwerke eine größere
-          Zahl von Stakeholdern im Bereich Wald und Forst erreicht,
-          Waldbesitzende in geringerer Intensität und Frequenz am Projekt
-          beteiligt.
+          werden durch kommunale und private Partnerbetriebe in Teilen
+          wiederholt, in ihrer Praxistauglichkeit analysiert und mit den
+          Ergebnissen aus der Kernfläche verglichen und bewertet. Das
+          Zusammenspiel der Kernfläche des Projektes mit den Satellitenflächen
+          der Partnerbetriebe stellt das Waldreallabor als Ganzes dar.
+          Zusätzlich werden im sogenannten „Praxisnetzwerk“, das über
+          Dachverbände und Netzwerke eine größere Zahl von Stakeholdern im
+          Bereich Wald und Forst erreicht, Waldbesitzende in geringerer
+          Intensität und Frequenz am Projekt beteiligt.
         </Typography>
         <Typography
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Die Daten der Messungen des Bestandesklimas, der Bodenfeuchte und
-          -temperatur, Ansprachen der Zersetzung der Streu, der Totholz- und
-          Vegetationsaufnahmen sowie der Verjüngung werden ausgewertet. Diese
-          Erhebungen lassen Auswirkung der Nutzungsintensitäten auf Klima,
-          Biodiversität und Wasserbereitstellung zu und werden mit
-          Wiederholungsaufnahmen am Boden und der Zeitreihenanalysen aus
+          Die Daten aus Messungen des Bestandesklimas, der Bodenfeuchte und
+          -temperatur, des Streufalls, des Baumwachstums, der Totholz- und
+          Vegetationsaufnahmen sowie der Verjüngung und zu Baummikrohabitaten
+          werden ausgewertet. Diese Erhebungen lassen Auswirkung der
+          Nutzungsintensitäten auf das Waldinnenklima, Biodiversität, den
+          Kohlenstoffkreislauf und Wasserbereitstellung zu und werden mit
+          Wiederholungsaufnahmen am Boden und einer Zeitreihenanalysen aus
           Fernerkundungsdaten kombiniert. Zusätzlich werden die erhobenen Daten
-          in das Waldwachstumsmodell BWINPro eingebunden um dieses
+          in das Waldwachstumsmodell BWINPro eingebunden, um dieses
           weiterzuentwickeln.
         </Typography>
         <Typography
@@ -107,14 +114,14 @@ const Waldmanagement = () => {
           tragbaren SLAM-LiDAR-Scanner (PLS) vom Boden und mit einem RTK-UAV aus
           der Luft digital erfasst und diese digitalen Vollinventurdaten den
           weiteren Arbeitspaketen im Projekt zur Verfügung gestellt. Dabei
-          liefert der PLS hochaufgelöste (~1cm) Punkte-wolken des Stammbereichs,
+          liefert der PLS hochaufgelöste (~1cm) Punktewolken des Stammbereichs,
           der Bodenvegetation und der unteren Krone. Die Punktewolken der
           UAV-Aufnahmen komplettieren den oberen Kronenbereich und dienen zur
           Georeferenzierung der gesamten 3D Punktewolke. Durch
-          Wiederholungs-aufnahmen nach den durchgeführten
+          Wiederholungsaufnahmen nach den durchgeführten
           Bewirtschaftungsmaßnahmen werden die Punktewolken um eine temporale
           Dimension erweitert (4D-Punktewolken). Diese ermöglichen die Analyse
-          und Visualisierung von Zuwachs und Kronendynamiken, sowie
+          und Visualisierung von Zuwachs und Kronendynamiken sowie
           Verjüngungsmonitoring innerhalb der 4D Punktewolken anhand noch zu
           entwickelnder digitaler Algorithmik.
         </Typography>

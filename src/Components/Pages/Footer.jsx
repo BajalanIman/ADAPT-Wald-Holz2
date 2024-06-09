@@ -28,15 +28,21 @@ const Footer = () => {
               mt: { xs: 3, md: 2 },
             }}
           >
-            <img
-              src={hnee}
-              alt="hnee"
-              style={{
-                // width: "180px",
-                height: { sm: "140px", md: "100px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.hnee.de"
+            >
+              <img
+                src={hnee}
+                alt="hnee"
+                style={{
+                  // width: "180px",
+                  height: { sm: "140px", md: "100px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
@@ -46,15 +52,21 @@ const Footer = () => {
               justifyContent: "center",
             }}
           >
-            <img
-              src={lefForst}
-              alt="lefForst"
-              style={{
-                width: "130px",
-                height: { sm: "100px", md: "100px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://forst.brandenburg.de/lfb/de/ueber-uns/landeskompetenzzentrum-lfe"
+            >
+              <img
+                src={lefForst}
+                alt="lefForst"
+                style={{
+                  width: "130px",
+                  height: { sm: "100px", md: "100px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
@@ -65,41 +77,59 @@ const Footer = () => {
               mt: { md: 3 },
             }}
           >
-            <img
-              src={mpl}
-              alt="mpl"
-              style={{
-                width: "300px",
-                height: { sm: "100px", md: "140px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.mpikg.mpg.de"
+            >
+              <img
+                src={mpl}
+                alt="mpl"
+                style={{
+                  width: "300px",
+                  height: { sm: "100px", md: "140px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <img
-              src={zalf}
-              alt="zalf"
-              style={{
-                width: "100px",
-                height: { sm: "100px", md: "140px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.zalf.de/de/Seiten/ZALF.aspx"
+            >
+              <img
+                src={zalf}
+                alt="zalf"
+                style={{
+                  width: "100px",
+                  height: { sm: "100px", md: "140px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={2}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <img
-              src={thuenen}
-              alt="thuenen"
-              style={{
-                // width: "180px",
-                height: { sm: "100px", md: "140px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.thuenen.de/de/fachinstitute/waldoekosysteme"
+            >
+              <img
+                src={thuenen}
+                alt="thuenen"
+                style={{
+                  // width: "180px",
+                  height: { sm: "100px", md: "140px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
       </Grid>

@@ -42,10 +42,10 @@ const Holzverwendung = () => {
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Mit dem Anspruch der langjährigen C-Bindung und einer Kaskadennutzung
-          wird eine Nutzung der Hölzer in langfristigen Produkten, insbesondere
-          im Holzbau angestrebt und die Wiederverwendung und -verwertung nach
-          der Lebensdauer mitgedacht.
+          Mit dem Anspruch der langjährigen Kohlenstoff-Bindung und einer
+          Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen
+          Produkten, insbesondere im Holzbau, angestrebt und die
+          Wiederverwendung und -verwertung nach der Lebensdauer mitgedacht.
         </Typography>
         <Typography
           variant="body2"
@@ -85,17 +85,6 @@ const Holzverwendung = () => {
           variant="body2"
           sx={{ textAlign: { md: "justify" }, mb: 1 }}
         >
-          Basierend auf der Materialanalyse des ganzen Baumes werden neben den
-          hochwertigen Segmenten für den Holzbau auch innovative Produkte aus
-          Restholz und Rinde entwickelt: im Rahmen von Studierenden- und
-          Promotionsprojekten werden experimentelle architektonische
-          Anwendungsmöglichkeiten für das Material des gesamten Baumes
-          untersucht und ggf. mit materialwissenschaftlichen Methoden ergänzt.
-        </Typography>
-        <Typography
-          variant="body2"
-          sx={{ textAlign: { md: "justify" }, mb: 1 }}
-        >
           Um zu einer effizienteren Nutzung des Rohstoffes Kiefer zu gelangen,
           ist es notwendig, dass die Kiefer in ihren Festigkeitseigenschaften,
           die von den Wuchsmerkmalen abhängen, untersucht (standortabhängig) und
@@ -105,9 +94,9 @@ const Holzverwendung = () => {
           Berlin/Brandenburg über den Projektergebnissen zu informieren, um die
           jeweiligen Protagonisten zu erreichen. Zusammen mit der
           Holzbauinitiative und den anderen Protagonisten des Projektes werden
-          entsprechende Schulungsmaßnahmen für Architektinnen und Architekten
-          sowie Planerinnen und Planer entwickelt und in entsprechenden
-          Veranstaltungen der interessierten Öffentlichkeit bekannt gegeben.
+          entsprechende Schulungsmaßnahmen für Architekt*innen sowie
+          Planer*innen entwickelt und in entsprechenden Veranstaltungen der
+          interessierten Öffentlichkeit bekannt gegeben.
         </Typography>
       </Box>
       <Footer />

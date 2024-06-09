@@ -79,7 +79,7 @@ const Holzbereitstellung = () => {
           Praxispartner des Projekts Holzernteansätze entwickelt und neue
           Einsatzbereiche in die Praxis umgesetzt. Diese Konzepte werden im
           praktischen Forstbetrieb umgesetzt und wissenschaftlich mittels
-          Zeitstudien, ökonomischen Begleituntersuchungen und ergonomische
+          Zeitstudien, ökonomischen Begleituntersuchungen und ergonomischen
           Untersuchungen ganzheitlich analysiert.
         </Typography>
       </Box>

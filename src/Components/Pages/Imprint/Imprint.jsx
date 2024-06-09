@@ -3,7 +3,6 @@ import { Typography, Box, Link } from "@mui/material";
 
 import Footer from "../../../Components/Pages/Footer";
 import SidbarMobileHandler from "../../Pages/Sidbar/SidbarMobileHandler";
-import Datenschutz from "./Datenschutz";
 
 const Imprint = () => {
   return (
@@ -44,7 +43,7 @@ const Imprint = () => {
               </a>
               Tel.{" "}
               <a style={{ color: "blue" }} href="tel:+497612033681">
-                +49 3334 657-414
+                +49 3334 657 414
               </a>
               <br />
               Kontakt per{" "}
@@ -56,7 +55,7 @@ const Imprint = () => {
               </a>
             </Typography>
             <Typography variant="body1" gutterBottom>
-              Verantwortlicher für die Website: Ferréol Berendt
+              Verantwortlicher für die Website: Dr. Ferréol Berendt
               <br />
             </Typography>
           </address>
@@ -67,9 +66,9 @@ const Imprint = () => {
           </Typography>
           <Typography variant="body1">
             Wir bemühen uns, auf unserer Website richtige, aktuelle und
-            vollständige Informationen bereit zu stellen und behalten uns vor,
-            die Informationen jederzeit ohne vorherige Ankündigung zu ändern
-            oder zu ergänzen.
+            vollständige Informationen bereitzustellen und behalten uns vor, die
+            Informationen jederzeit ohne vorherige Ankündigung zu ändern oder zu
+            ergänzen.
           </Typography>
           <Typography variant="body1">
             Wir übernehmen keine Gewähr für die Aktualität, Richtigkeit und
@@ -93,7 +92,6 @@ const Imprint = () => {
           </Typography>
         </Box>
       </Box>
-      <Datenschutz />
       <Footer />
     </div>
   );

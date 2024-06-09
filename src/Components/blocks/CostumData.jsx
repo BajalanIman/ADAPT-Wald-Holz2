@@ -26,14 +26,14 @@ const CostumData = [
     id: 3,
     navigate: "/waldmanagement",
     image: image3,
-    title: "Das Waldmanagement",
+    title: "Waldmanagement",
     text: "Ziel des Moduls ist die Erprobung und Analyse adaptiver Waldmanagement-Verfahren zur Umsetzung des ökologischen Waldumbaus von Kiefernreinbeständen in biodiverse und resiliente Misch- und Laubwaldbestände. ",
   },
   {
     id: 4,
     navigate: "/holzbereitstellung",
     image: image5,
-    title: "Die Holzbereitstellung",
+    title: "Holzbereitstellung",
     text: "Kernstück der Bemühungen zur Optimierung der Rohstoffversorgung und des zugehörigen Datenaustauschs sowie zur Erhöhung von Transparenz und Vertrauen zwischen der Wald- und der Holzwirtschaft ist...",
   },
   {
@@ -41,7 +41,7 @@ const CostumData = [
     navigate: "/holzverwendung",
     image: image7,
     title: "Die Holzverwendung",
-    text: "Mit dem Anspruch der langjährigen C-Bindung und einer Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen Produkten, insbesondere im Holzbau angestrebt und die Wiederverwendung und -verwertung...",
+    text: " Mit dem Anspruch der langjährigen Kohlenstoff-Bindung und einer Kaskadennutzung wird eine Nutzung der Hölzer in langfristigen Produkten, insbesondere im Holzbau, angestrebt und die Wiederverwendung und -verwertung...",
   },
   {
     id: 6,

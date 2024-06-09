@@ -22,7 +22,7 @@ const Team = () => {
         Teammitglieder
       </Typography>
       <Typography variant="h5" sx={{ fontWeight: "bold", mt: 8, mb: 2 }}>
-        Projektkoordination
+        Wissenschaftl. Projektkoordination:
       </Typography>
       <Box>
         {TeamData.map((e) => {

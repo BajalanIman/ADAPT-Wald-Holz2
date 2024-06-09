@@ -73,7 +73,7 @@ const Projektidee = () => {
           Holz, ist in der Projektregion eine enge Verzahnung von adaptivem
           Waldmanagement und effizienter stofflicher Holznutzung von enormer
           Bedeutung. Dazu wird im Verbundprojekt ADAPT-Wald-Holz ein
-          transdisziplinär arbeitendes Wald-Reallabor eingerichtet, um den
+          transdisziplinär arbeitendes Waldreallabor eingerichtet, um den
           Einfluss unterschiedlicher Waldbewirtschaftungsstrategien auf die
           zentralen Ökosystemleistungen zu untersuchen: Holzproduktion
           (Nutzung), Kohlenstoffbindung (Klimaschutz) sowie Grund- und
@@ -102,7 +102,7 @@ const Projektidee = () => {
           gesamten Wertschöpfungskette eine Anpassung an die Herausforderungen
           des Klimawandels ermöglichen. Das öffnet neue Wege der Kooperation
           zwischen den Verbundpartnern sowie mit den Praxispartnern. Durch die
-          Forschungsumgebung Wald-Reallabor und die räumlich zusammengeführte
+          Forschungsumgebung Waldreallabor und die räumlich zusammengeführte
           Innovationsgruppe entstehen Synergien zwischen Akteuren der Wald- und
           Holzforschung in Brandenburg. Diese Synergien sind die Grundlage für
           die langfristige Etablierung der Forschungsgruppe und weitere,

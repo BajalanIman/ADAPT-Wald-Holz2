@@ -57,7 +57,7 @@ const Regulus = () => {
             className="pointer text-blue-500 px-2"
             href="https://regulus-waldholz.de/ "
           >
-            REGULUS -Forschung
+            REGULUS-Forschung
           </a>
           darin, inter- und transdisziplinäre Forschung zu stärken und die
           Forschungslandschaft Wald und Holz aktiv zu gestalten, um
