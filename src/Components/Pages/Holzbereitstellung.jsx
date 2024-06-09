@@ -6,10 +6,12 @@ import Footer from "./Footer";
 import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image7 from "./../../assets/page7.jpg";
+import LoadTop from "../LoadTop";
 
 const Holzbereitstellung = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <SidbarMobileHandler />
       <Typography
         variant="h5"
@@ -46,22 +48,22 @@ const Holzbereitstellung = () => {
           einer geeigneten interoperablen (Infra-)Struktur für Datenaustausch
           und Datenanalyse (i.W. Plattform). Als Bindeglied zwischen dem
           Waldmanagement (
-          <Link to="/waldmanagement" style={{ color: "#4169E1" }}>
+          <Link to="/waldmanagement#top" style={{ color: "#4169E1" }}>
             Schnittstelle Modul A
           </Link>
           ) und der Holzverwendung (
-          <Link to="/holzverwendung" style={{ color: "#4169E1" }}>
+          <Link to="/holzverwendung#top" style={{ color: "#4169E1" }}>
             Schnittstelle Modul C
           </Link>
           ) sollen relevante Daten aller Akteure gleichermaßen erfasst werden.
           Neben generierten Daten aus der Holzernte und -logistik (z. B.
           Holzvermessung) verbindet die Plattform insbesondere Daten aus dem
           digitalen Waldmonitoring und der Waldbewirtschaftung (
-          <Link to="/waldmanagement" style={{ color: "#4169E1" }}>
+          <Link to="/waldmanagement#top" style={{ color: "#4169E1" }}>
             Schnittstelle Modul A
           </Link>
           ) sowie der Materialcharakterisierung (
-          <Link to="/holzverwendung" style={{ color: "#4169E1" }}>
+          <Link to="/holzverwendung#top" style={{ color: "#4169E1" }}>
             Schnittstelle Modul C
           </Link>
           ).

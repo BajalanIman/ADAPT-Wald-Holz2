@@ -43,7 +43,7 @@ const Module = () => {
           Daten nimmt dabei eine zentrale Rolle ein. Die geplanten
           Forschungsarbeiten sind in drei Hauptmodule unterteilt {""}
           <Link
-            to="/holzverwendung"
+            to="/holzverwendung#top"
             style={{
               color: "#4169E1",
             }}
@@ -51,7 +51,7 @@ const Module = () => {
             {""}(A) Adaptives Waldmanagement,
           </Link>
           <Link
-            to="/innoForum"
+            to="/innoForum#top"
             style={{
               color: "#4169E1",
             }}
@@ -59,7 +59,7 @@ const Module = () => {
             {""} (B) Holzernte, Logistik und Datenvernetzung sowie,{""}
           </Link>
           <Link
-            to="/projektkonsortium"
+            to="/projektkonsortium#top"
             style={{
               color: "#4169E1",
             }}

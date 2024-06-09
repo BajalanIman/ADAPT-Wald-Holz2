@@ -8,10 +8,12 @@ import {
   ListItemText,
   Link,
 } from "@mui/material";
+import LoadTop from "../LoadTop";
 
 const Datenschutz = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <Box sx={{ mt: { xs: 4, md: 8 }, mb: 4, width: "full" }}>
         <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2 }}>
           Datenschutz

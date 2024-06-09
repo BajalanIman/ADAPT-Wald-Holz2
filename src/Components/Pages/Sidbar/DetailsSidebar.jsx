@@ -6,36 +6,36 @@ const DetailsSidebar = () => {
   return (
     <>
       <Box>
-        <Link to="/projektidee">
+        <Link to="/projektidee#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Die Projektidee" />
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/module">
+        <Link to="/module#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Die Module" />
           </ListItem>
         </Link>
         <List sx={{ pl: 4 }}>
-          <Link to="/waldmanagement">
+          <Link to="/waldmanagement#top">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="Waldmanagement" />
             </ListItem>
           </Link>
-          <Link to="/holzbereitstellung">
+          <Link to="/holzbereitstellung#top">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="Holzbereitstellung" />
             </ListItem>
           </Link>
-          <Link to="/holzverwendung">
+          <Link to="/holzverwendung#top">
             <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
               <ListItemText primary="Holzverwendung" />
             </ListItem>
           </Link>
         </List>
         <Divider />
-        <Link to="/innoForum">
+        <Link to="/innoForum#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="InnoForum Wald und Holz" />
           </ListItem>
@@ -50,31 +50,31 @@ const DetailsSidebar = () => {
           </ListItem>
         </a>
         <Divider />
-        <Link to="/team">
+        <Link to="/team#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Teammitglieder" />
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/projektkonsortium">
+        <Link to="/projektkonsortium#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Projektkonsortium" />
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/regulus">
+        <Link to="/regulus#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="REGULUS" />
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/imprint">
+        <Link to="/imprint#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Impressum" />
           </ListItem>
         </Link>
         <Divider />
-        <Link to="/datenschutz">
+        <Link to="/datenschutz#top">
           <ListItem button sx={{ ":hover": { color: "#039be5" } }}>
             <ListItemText primary="Datenschutz" />
           </ListItem>

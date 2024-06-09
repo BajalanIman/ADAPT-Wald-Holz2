@@ -1,16 +1,18 @@
 import React from "react";
 import { Box, CardMedia, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import Footer from "./Footer";
 import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
+import LoadTop from "../LoadTop";
 
 import image6 from "./../../assets/Ramazan.jpg";
 import image5 from "./../../assets/page5.jpg";
-import { Link } from "react-router-dom";
 
 const Waldmanagement = () => {
   return (
     <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <SidbarMobileHandler />
       <Typography
         variant="h5"
@@ -65,11 +67,11 @@ const Waldmanagement = () => {
           Verjüngungssteuerung etc.) die Effekte unterschiedlicher
           Managementszenarien auf die Bestandesvitalität, -struktur und
           –produktivität, auf Holzernteverfahren{" "}
-          <Link to="/holzbereitstellung" style={{ color: "#4169E1" }}>
+          <Link to="/holzbereitstellung#top" style={{ color: "#4169E1" }}>
             (Schnittstelle Modul B)
           </Link>{" "}
           sowie auf Holzqualität und -quantität{" "}
-          <Link to="/holzverwendung" style={{ color: "#4169E1" }}>
+          <Link to="/holzverwendung#top" style={{ color: "#4169E1" }}>
             (Schnittstelle Modul C)
           </Link>{" "}
           und auf zukünftig relevante Waldökosystemleistungen in der Region

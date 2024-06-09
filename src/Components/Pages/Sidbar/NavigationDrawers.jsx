@@ -3,8 +3,9 @@ import { Box, Button, Divider, List, ListItem } from "@mui/material";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import { Link } from "react-router-dom";
 
-import adapt from "./../../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
+import LoadTop from "../../LoadTop";
 import DetailsSidebar from "./DetailsSidebar";
+import adapt from "./../../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
 const NavigationDrawers = () => {
   const [sideBarSize, setSideBarSize] = useState(true);
@@ -15,6 +16,7 @@ const NavigationDrawers = () => {
 
   return (
     <Box sx={{ display: { xs: "none", md: "flex" } }}>
+      <LoadTop />
       <Box
         sx={{
           position: "fixed",
@@ -31,7 +33,7 @@ const NavigationDrawers = () => {
               justifyContent: "center",
             }}
           >
-            <Link to="/">
+            <Link to="/#top">
               <img
                 src={adapt}
                 alt="Logo"
@@ -78,7 +80,7 @@ const NavigationDrawers = () => {
         <List sx={{ mt: 0 }}>
           <Box sx={{ display: "flex", my: 2 }}>
             <ListItem>
-              <Link to="/">
+              <Link to="/#top">
                 <img
                   src={adapt}
                   alt="Logo"

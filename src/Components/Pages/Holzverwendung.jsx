@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 import Footer from "./Footer";
+import LoadTop from "../LoadTop";
 import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image8 from "./../../assets/page8.jpg";
@@ -10,6 +11,7 @@ import image8 from "./../../assets/page8.jpg";
 const Holzverwendung = () => {
   return (
     <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <SidbarMobileHandler />
       <Typography
         variant="h5"
@@ -61,11 +63,11 @@ const Holzverwendung = () => {
           Umweltbedingungen im Waldreallabor sowie des Standortes und der
           Wuchsform erfasst und mit den gewonnenen Kennwerten in Bezug gesetzt
           werden (
-          <Link to="/waldmanagement" style={{ color: "#4169E1" }}>
+          <Link to="/waldmanagement#top" style={{ color: "#4169E1" }}>
             Schnittstelle Modul A{" "}
           </Link>
           und{" "}
-          <Link to="/holzbereitstellung" style={{ color: "#4169E1" }}>
+          <Link to="/holzbereitstellung#top" style={{ color: "#4169E1" }}>
             Modul B
           </Link>
           ).

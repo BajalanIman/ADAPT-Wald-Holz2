@@ -13,7 +13,7 @@ const TopLogo = () => {
           justifyContent: { xs: "center", md: "start" },
         }}
       >
-        <Link to="/">
+        <Link to="/#top">
           <img src={adapt} alt="adapt" className="w-60" />
         </Link>
       </Box>

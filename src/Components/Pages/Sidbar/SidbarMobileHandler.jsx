@@ -31,7 +31,7 @@ const SidbarMobileHandler = () => {
           boxShadow: "2px 2px 2px",
         }}
       >
-        <Link to="/">
+        <Link to="/#top">
           <img
             src={adapt}
             alt="Logo"

@@ -2,6 +2,7 @@ import React from "react";
 import { Box, CardMedia, Typography } from "@mui/material";
 
 import Footer from "./Footer";
+import LoadTop from "../LoadTop";
 import SidbarMobileHandler from "./Sidbar/SidbarMobileHandler";
 
 import image3 from "./../../assets/page3.jpg";
@@ -9,6 +10,7 @@ import image3 from "./../../assets/page3.jpg";
 const InnoForum = () => {
   return (
     <div className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <SidbarMobileHandler />
       <Box>
         <Typography

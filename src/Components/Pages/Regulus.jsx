@@ -4,10 +4,12 @@ import { Box, Typography, CardMedia } from "@mui/material";
 import Footer from "./Footer";
 import image4 from "./../../assets/page4.jpg";
 import SidbarMobileHandler from "./../Pages/Sidbar/SidbarMobileHandler";
+import LoadTop from "../LoadTop";
 
 const Regulus = () => {
   return (
     <Box className="w-full ml-4 md:ml-24 pr-4 md:pr-24 mb-8">
+      <LoadTop />
       <SidbarMobileHandler />
       <Typography
         variant="h5"

@@ -9,6 +9,7 @@ import hnee from "./../../assets/HNEE_Logo_Dt_gruen.jpg";
 import thuenen from "./../../assets/THUENEN_PRINT_CMYK.jpg";
 import mpl from "./../../assets/MPI_Logo_Kolloid-und Grenzflächenforschung_DE_CMYK_black.jpg";
 import regulus from "./../../assets/logo-regulus_mit_subline.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -142,41 +143,55 @@ const Footer = () => {
       >
         <Grid item xs={6} sm={4} md={3}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <img
-              src={bmbfGefördert}
-              alt="bmbfGefördert"
-              style={{
-                width: "180px",
-                height: { sm: "100px", md: "140px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.bmbf.de/bmbf/de/home/home_node.html"
+            >
+              <img
+                src={bmbfGefördert}
+                alt="bmbfGefördert"
+                style={{
+                  width: "180px",
+                  height: { sm: "100px", md: "140px" },
+                  objectFit: "contain",
+                }}
+              />
+            </a>
           </Box>
         </Grid>
         <Grid item xs={6} sm={4} md={3}>
           <Box sx={{ textAlign: "center" }}>
-            <img
-              src={bmfFONA}
-              alt="FONA"
-              style={{
-                width: "180px",
-                height: { sm: "100px", md: "140px" },
-                objectFit: "contain",
-              }}
-            />
+            <a
+              target="_blank"
+              className="pointer text-[#4169E1] px-2"
+              href="https://www.fona.de/de/"
+            >
+              <img
+                src={bmfFONA}
+                alt="FONA"
+                style={{
+                  width: "180px",
+                  height: { sm: "100px", md: "140px" },
+                  objectFit: "contain",
+                }}
+              />{" "}
+            </a>
           </Box>
         </Grid>
         <Grid item xs={4} sm={4} md={2}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <img
-              src={regulus}
-              alt="regulus"
-              style={{
-                // width: "170px",
-                height: { sm: "100px", md: "150px" },
-                objectFit: "contain",
-              }}
-            />
+            <Link to="/regulus#top">
+              <img
+                src={regulus}
+                alt="regulus"
+                style={{
+                  // width: "170px",
+                  height: { sm: "100px", md: "150px" },
+                  objectFit: "contain",
+                }}
+              />
+            </Link>
           </Box>
         </Grid>
       </Grid>

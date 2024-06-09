@@ -2,6 +2,7 @@ import React from "react";
 import { Close } from "@mui/icons-material";
 import { Box, Button, Dialog, Divider, List, ListItem } from "@mui/material";
 
+import LoadTop from "../../LoadTop";
 import DetailsSidebar from "./DetailsSidebar";
 import adapt from "./../../../assets/final_wortbildmarke_adaptwaldholz_2023.jpg";
 
@@ -10,6 +11,7 @@ const SidebarMobile = (props) => {
 
   return (
     <div>
+      <LoadTop />
       <Dialog onClose={onClose} open={open} className="bg-gray-500 opacity-98">
         <Box
           sx={{
