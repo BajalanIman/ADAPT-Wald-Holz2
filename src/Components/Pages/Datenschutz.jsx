@@ -9,6 +9,7 @@ import {
   Link,
 } from "@mui/material";
 import LoadTop from "../LoadTop";
+import Footer from "./Footer";
 
 const Datenschutz = () => {
   return (
@@ -254,6 +255,7 @@ const Datenschutz = () => {
           </Typography>
         </Box>
       </Box>
+      <Footer />
     </div>
   );
 };
